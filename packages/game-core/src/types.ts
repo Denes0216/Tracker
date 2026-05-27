@@ -45,11 +45,20 @@ export type InputType = 'multiple-choice' | 'free-text';
 export type ModeSelection = GameModeId | 'mixed';
 export type CriterionSelection = Criterion | 'mixed';
 
+/**
+ * How songs are dealt across players in pass-and-play.
+ * - `same-songs`: every player answers the identical set (fairest).
+ * - `different-songs`: each player gets a freshly sampled set.
+ */
+export type TurnStructure = 'same-songs' | 'different-songs';
+
 export interface GameConfig {
   mode: ModeSelection;
   /** Criterion for Name-It rounds. Ignored by Pin-the-Year. */
   criterion: CriterionSelection;
   inputType: InputType;
+  /** How songs are dealt across players in pass-and-play multiplayer. */
+  turnStructure: TurnStructure;
   roundCount: number;
   /** Pin-the-Year visible range width, 15–20. */
   rangeWidth: number;

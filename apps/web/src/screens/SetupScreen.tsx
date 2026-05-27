@@ -1,10 +1,11 @@
 import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
-import type { CriterionSelection, InputType, ModeSelection } from '@mgg/game-core';
+import type { CriterionSelection, InputType, ModeSelection, TurnStructure } from '@mgg/game-core';
 import { eligibleTracks } from '@mgg/game-core';
 import { useGameStore } from '../store/gameStore';
 import { DECKS, getDeck } from '../services/decks';
 import { Segmented } from '../components/Segmented';
+import { PlayerRoster } from '../components/PlayerRoster';
 
 const MODE_OPTIONS: ReadonlyArray<{ value: ModeSelection; label: string }> = [
   { value: 'name-it', label: 'Name It' },
@@ -24,6 +25,11 @@ const INPUT_OPTIONS: ReadonlyArray<{ value: InputType; label: string }> = [
   { value: 'free-text', label: 'Free text' },
 ];
 
+const TURN_OPTIONS: ReadonlyArray<{ value: TurnStructure; label: string }> = [
+  { value: 'same-songs', label: 'Same songs' },
+  { value: 'different-songs', label: 'Different songs' },
+];
+
 const ROUND_OPTIONS = [5, 10, 15].map((n) => ({ value: n, label: String(n) }));
 
 const CLIP_OPTIONS = [
@@ -35,7 +41,7 @@ const CLIP_OPTIONS = [
 
 export function SetupScreen() {
   const navigate = useNavigate();
-  const { deckId, config, selectDeck, setConfig, startGame } = useGameStore();
+  const { deckId, config, players, selectDeck, setConfig, startGame } = useGameStore();
 
   useEffect(() => {
     if (!deckId) selectDeck(DECKS[0].id);
@@ -53,6 +59,8 @@ export function SetupScreen() {
   return (
     <div className="flex flex-col gap-6">
       <h2 className="text-2xl font-bold">Game setup</h2>
+
+      <PlayerRoster />
 
       <section>
         <div className="mb-2 text-sm font-medium text-slate-400">Deck</div>
@@ -101,6 +109,15 @@ export function SetupScreen() {
         onChange={(inputType) => setConfig({ inputType })}
         disabled={!usesNameIt}
       />
+
+      {players.length > 1 && (
+        <Segmented<TurnStructure>
+          label="Turn structure"
+          value={config.turnStructure}
+          options={TURN_OPTIONS}
+          onChange={(turnStructure) => setConfig({ turnStructure })}
+        />
+      )}
 
       <Segmented<number>
         label="Rounds"

@@ -1,9 +1,11 @@
 import { useEffect } from 'react';
 import { useNavigate } from 'react-router-dom';
 import {
+  currentPlayer,
   getCurrentRound,
   getLastResult,
   roundNumber,
+  totalRounds,
   totalScore,
   type Criterion,
   type Round,
@@ -15,6 +17,7 @@ import { Choices } from '../components/Choices';
 import { FreeTextAnswer } from '../components/FreeTextAnswer';
 import { YearPicker } from '../components/YearPicker';
 import { Reveal } from '../components/Reveal';
+import { PassInterstitial } from '../components/PassInterstitial';
 
 const CRITERION_PROMPT: Record<Criterion, string> = {
   year: 'What year was this released?',
@@ -46,12 +49,15 @@ export function RoundScreen() {
   const game = useGameStore((s) => s.game);
   const submitAnswer = useGameStore((s) => s.submitAnswer);
   const next = useGameStore((s) => s.next);
+  const beginTurn = useGameStore((s) => s.beginTurn);
 
   const clipMs = game?.config.clipMs ?? 15000;
   const { isPlaying, isLoading, error, playCount, load, play, stop } = useClipPlayer(clipMs);
 
+  const inPlay = game?.phase === 'playing' || game?.phase === 'reveal';
   const round = game ? getCurrentRound(game) : undefined;
-  const previewUrl = round?.track.previewUrl;
+  // Only load the clip once a turn is underway — the pass screen must stay silent.
+  const previewUrl = inPlay ? round?.track.previewUrl : undefined;
 
   useEffect(() => {
     if (!game) navigate('/setup', { replace: true });
@@ -69,17 +75,39 @@ export function RoundScreen() {
     return () => stop();
   }, [previewUrl, load, stop]);
 
-  if (!game || !round) return null;
+  if (!game) return null;
+
+  const multiplayer = game.players.length > 1;
+
+  if (game.phase === 'pass') {
+    return (
+      <PassInterstitial
+        playerName={currentPlayer(game).name}
+        isFirst={game.currentPlayerIndex === 0}
+        onBegin={beginTurn}
+      />
+    );
+  }
+
+  if (!round) return null;
 
   const revealed = game.phase === 'reveal';
   const lastResult = getLastResult(game);
-  const total = totalScore(game, game.players[game.currentPlayerIndex].id);
+  const total = totalScore(game, currentPlayer(game).id);
+  const isLastRound = roundNumber(game) >= totalRounds(game);
+  const isLastPlayer = game.currentPlayerIndex >= game.players.length - 1;
+  const advanceLabel = !isLastRound
+    ? 'Next round'
+    : isLastPlayer
+      ? 'See results'
+      : 'Pass to next player';
 
   return (
     <div className="flex flex-col gap-6">
       <div className="flex items-center justify-between text-sm text-slate-400">
         <span>
-          Round {roundNumber(game)} / {game.rounds.length}
+          {multiplayer && <span className="font-semibold text-brand-300">{currentPlayer(game).name} · </span>}
+          Round {roundNumber(game)} / {totalRounds(game)}
         </span>
         <span>
           Score: <span className="font-bold text-slate-200">{total}</span>
@@ -134,7 +162,7 @@ export function RoundScreen() {
             detail={revealDetail(round, lastResult.answer.value, lastResult.score)}
           />
           <button className="btn-primary text-lg" onClick={next}>
-            {roundNumber(game) >= game.rounds.length ? 'See results' : 'Next round'}
+            {advanceLabel}
           </button>
         </>
       )}
