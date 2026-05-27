@@ -6,6 +6,8 @@ import { HomeScreen } from './screens/HomeScreen';
 import { SetupScreen } from './screens/SetupScreen';
 import { RoundScreen } from './screens/RoundScreen';
 import { ResultsScreen } from './screens/ResultsScreen';
+import { DecksScreen } from './screens/DecksScreen';
+import { DeckEditorScreen } from './screens/DeckEditorScreen';
 
 export default function App() {
   const hydrate = useGameStore((s) => s.hydrate);
@@ -21,6 +23,9 @@ export default function App() {
         <Route path="/setup" element={<SetupScreen />} />
         <Route path="/play" element={<RoundScreen />} />
         <Route path="/results" element={<ResultsScreen />} />
+        <Route path="/decks" element={<DecksScreen />} />
+        <Route path="/decks/new" element={<DeckEditorScreen />} />
+        <Route path="/decks/edit/:deckId" element={<DeckEditorScreen />} />
         <Route path="*" element={<Navigate to="/" replace />} />
       </Routes>
     </AppShell>

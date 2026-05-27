@@ -1,11 +1,32 @@
 import { describe, it, expect, beforeEach } from 'vitest';
-import { currentPlayerRounds, getCurrentRound } from '@mgg/game-core';
+import { currentPlayerRounds, getCurrentRound, type Deck, type Track } from '@mgg/game-core';
 import { useGameStore } from './gameStore';
 import { DECKS } from '../services/decks';
 
+function fakeTrack(i: number): Track {
+  return {
+    id: `itunes:${i}`,
+    title: `Song ${i}`,
+    artist: `Artist ${i}`,
+    album: `Album ${i}`,
+    releaseYear: 1990 + i,
+    releaseDate: `${1990 + i}-01-01`,
+    previewUrl: `https://example.com/${i}.m4a`,
+    artworkUrl: '',
+    durationMs: 30000,
+    source: 'itunes',
+    yearVerified: true,
+  };
+}
+
 describe('gameStore', () => {
   beforeEach(() => {
-    useGameStore.setState({ game: null, players: [{ id: 'p1', name: 'Player 1' }] });
+    useGameStore.setState({
+      game: null,
+      players: [{ id: 'p1', name: 'Player 1' }],
+      customDecks: [],
+      deckId: null,
+    });
   });
 
   it('builds a solo game from the selected deck', () => {
@@ -59,5 +80,26 @@ describe('gameStore', () => {
     expect(useGameStore.getState().game!.phase).toBe('pass');
     useGameStore.getState().beginTurn();
     expect(useGameStore.getState().game!.phase).toBe('playing');
+  });
+
+  it('saves a custom deck, plays it, and clears selection on delete', () => {
+    const deck: Deck = {
+      id: 'custom:test',
+      name: 'My Mix',
+      description: 'test',
+      tracks: [1, 2, 3, 4].map(fakeTrack),
+    };
+    const store = useGameStore.getState();
+    store.saveCustomDeck(deck);
+    expect(useGameStore.getState().customDecks).toHaveLength(1);
+
+    store.selectDeck('custom:test');
+    store.setConfig({ mode: 'name-it', inputType: 'multiple-choice', roundCount: 3 });
+    expect(useGameStore.getState().startGame()).toBe(true);
+    expect(currentPlayerRounds(useGameStore.getState().game!)).toHaveLength(3);
+
+    useGameStore.getState().deleteCustomDeck('custom:test');
+    expect(useGameStore.getState().customDecks).toHaveLength(0);
+    expect(useGameStore.getState().deckId).toBeNull();
   });
 });

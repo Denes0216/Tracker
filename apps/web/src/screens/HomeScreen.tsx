@@ -14,9 +14,14 @@ export function HomeScreen() {
         </p>
       </div>
 
-      <button className="btn-primary w-48 text-lg" onClick={() => navigate('/setup')}>
-        Play
-      </button>
+      <div className="flex flex-col items-center gap-3">
+        <button className="btn-primary w-48 text-lg" onClick={() => navigate('/setup')}>
+          Play
+        </button>
+        <button className="btn-ghost w-48" onClick={() => navigate('/decks')}>
+          Build a deck
+        </button>
+      </div>
 
       <ul className="grid w-full grid-cols-1 gap-3 text-left text-sm text-slate-300 sm:grid-cols-2">
         <li className="card p-4">

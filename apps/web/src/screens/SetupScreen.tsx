@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import type { CriterionSelection, InputType, ModeSelection, TurnStructure } from '@mgg/game-core';
 import { eligibleTracks } from '@mgg/game-core';
 import { useGameStore } from '../store/gameStore';
-import { DECKS, getDeck } from '../services/decks';
+import { DECKS } from '../services/decks';
 import { Segmented } from '../components/Segmented';
 import { PlayerRoster } from '../components/PlayerRoster';
 
@@ -41,15 +41,18 @@ const CLIP_OPTIONS = [
 
 export function SetupScreen() {
   const navigate = useNavigate();
-  const { deckId, config, players, selectDeck, setConfig, startGame } = useGameStore();
+  const { deckId, config, players, customDecks, selectDeck, setConfig, startGame } = useGameStore();
 
+  const allDecks = [...DECKS, ...customDecks];
+  const deck = allDecks.find((d) => d.id === deckId) ?? DECKS[0];
+  const activeDeckId = deck.id;
+
+  // Keep a valid deck selected even if the stored id was deleted.
   useEffect(() => {
-    if (!deckId) selectDeck(DECKS[0].id);
-  }, [deckId, selectDeck]);
+    if (deckId !== deck.id) selectDeck(deck.id);
+  }, [deckId, deck.id, selectDeck]);
 
-  const activeDeckId = deckId ?? DECKS[0].id;
-  const deck = getDeck(activeDeckId);
-  const available = deck ? eligibleTracks(deck, config.mode).length : 0;
+  const available = eligibleTracks(deck, config.mode).length;
   const usesNameIt = config.mode !== 'pin-the-year';
 
   const handleStart = () => {
@@ -63,25 +66,60 @@ export function SetupScreen() {
       <PlayerRoster />
 
       <section>
-        <div className="mb-2 text-sm font-medium text-slate-400">Deck</div>
+        <div className="mb-2 flex items-center justify-between">
+          <span className="text-sm font-medium text-slate-400">Deck</span>
+          <button
+            type="button"
+            className="text-sm font-semibold text-brand-400 hover:text-brand-300"
+            onClick={() => navigate('/decks')}
+          >
+            Build a deck
+          </button>
+        </div>
         <div className="grid gap-3">
-          {DECKS.map((d) => {
+          {allDecks.map((d) => {
             const active = d.id === activeDeckId;
+            const custom = d.id.startsWith('custom:');
             return (
-              <button
+              <div
                 key={d.id}
-                type="button"
+                role="button"
+                tabIndex={0}
                 onClick={() => selectDeck(d.id)}
-                className={`card flex flex-col gap-1 text-left transition ${
+                onKeyDown={(e) => {
+                  if (e.key === 'Enter' || e.key === ' ') selectDeck(d.id);
+                }}
+                className={`card flex cursor-pointer flex-col gap-1 text-left transition ${
                   active ? 'ring-2 ring-brand-500' : 'hover:border-slate-700'
                 }`}
               >
-                <div className="flex items-center justify-between">
-                  <span className="font-semibold">{d.name}</span>
-                  <span className="text-xs text-slate-500">{d.tracks.length} songs</span>
+                <div className="flex items-center justify-between gap-2">
+                  <span className="flex items-center gap-2 font-semibold">
+                    {d.name}
+                    {custom && (
+                      <span className="rounded bg-slate-700 px-1.5 py-0.5 text-[10px] uppercase text-slate-300">
+                        Custom
+                      </span>
+                    )}
+                  </span>
+                  <span className="flex items-center gap-2 text-xs text-slate-500">
+                    {d.tracks.length} songs
+                    {custom && (
+                      <button
+                        type="button"
+                        className="text-brand-400 hover:text-brand-300"
+                        onClick={(e) => {
+                          e.stopPropagation();
+                          navigate(`/decks/edit/${encodeURIComponent(d.id)}`);
+                        }}
+                      >
+                        Edit
+                      </button>
+                    )}
+                  </span>
                 </div>
                 <span className="text-sm text-slate-400">{d.description}</span>
-              </button>
+              </div>
             );
           })}
         </div>
@@ -133,13 +171,27 @@ export function SetupScreen() {
         onChange={(clipMs) => setConfig({ clipMs })}
       />
 
-      {config.mode !== 'name-it' && available < config.roundCount && (
-        <p className="text-sm text-amber-400">
-          Only {available} year-verified songs in this deck — you&apos;ll play {available} rounds.
+      {available === 0 ? (
+        <p className="text-sm text-rose-400">
+          {config.mode === 'name-it'
+            ? 'This deck has no songs yet — add some in the deck builder.'
+            : 'This deck has no year-verified songs. Verify some years, or switch to Name It.'}
         </p>
+      ) : (
+        config.mode !== 'name-it' &&
+        available < config.roundCount && (
+          <p className="text-sm text-amber-400">
+            Only {available} year-verified {available === 1 ? 'song' : 'songs'} in this deck — you&apos;ll
+            play {available} {available === 1 ? 'round' : 'rounds'}.
+          </p>
+        )
       )}
 
-      <button className="btn-primary mt-2 text-lg" onClick={handleStart}>
+      <button
+        className="btn-primary mt-2 text-lg"
+        disabled={available === 0}
+        onClick={handleStart}
+      >
         Start game
       </button>
     </div>

@@ -6,6 +6,7 @@ import {
   eligibleTracks,
   nextRound as engineNextRound,
   submitAnswer as engineSubmitAnswer,
+  type Deck,
   type GameConfig,
   type GameState,
   type Player,
@@ -17,6 +18,7 @@ import { localKeyValueStore } from '../services/keyValueStore';
 const CONFIG_KEY = 'mgg:config';
 const DECK_KEY = 'mgg:deckId';
 const PLAYERS_KEY = 'mgg:players';
+const CUSTOM_DECKS_KEY = 'mgg:customDecks';
 const MAX_PLAYERS = 8;
 
 function newId(): string {
@@ -29,13 +31,17 @@ interface GameStore {
   deckId: string | null;
   config: GameConfig;
   players: Player[];
+  customDecks: Deck[];
   game: GameState | null;
   hydrated: boolean;
 
-  /** Load last-used config, deck, and roster from the KeyValueStore. */
+  /** Load last-used config, deck, roster, and custom decks from storage. */
   hydrate(): Promise<void>;
   selectDeck(id: string): void;
   setConfig(patch: Partial<GameConfig>): void;
+
+  saveCustomDeck(deck: Deck): void;
+  deleteCustomDeck(id: string): void;
 
   addPlayer(): void;
   removePlayer(id: string): void;
@@ -53,18 +59,26 @@ function persistPlayers(players: Player[]): void {
   void localKeyValueStore.set(PLAYERS_KEY, JSON.stringify(players));
 }
 
+/** Find a deck by id across the built-in and custom collections. */
+function findDeck(id: string | null, customDecks: Deck[]): Deck | undefined {
+  if (!id) return undefined;
+  return getDeck(id) ?? customDecks.find((d) => d.id === id);
+}
+
 export const useGameStore = create<GameStore>((set, get) => ({
   deckId: null,
   config: { ...DEFAULT_CONFIG },
   players: initialPlayers,
+  customDecks: [],
   game: null,
   hydrated: false,
 
   async hydrate() {
-    const [savedConfig, savedDeck, savedPlayers] = await Promise.all([
+    const [savedConfig, savedDeck, savedPlayers, savedDecks] = await Promise.all([
       localKeyValueStore.get(CONFIG_KEY),
       localKeyValueStore.get(DECK_KEY),
       localKeyValueStore.get(PLAYERS_KEY),
+      localKeyValueStore.get(CUSTOM_DECKS_KEY),
     ]);
     set((s) => {
       const players = savedPlayers ? (JSON.parse(savedPlayers) as Player[]) : s.players;
@@ -72,8 +86,29 @@ export const useGameStore = create<GameStore>((set, get) => ({
         config: savedConfig ? { ...s.config, ...(JSON.parse(savedConfig) as Partial<GameConfig>) } : s.config,
         deckId: savedDeck ?? s.deckId,
         players: players.length > 0 ? players : s.players,
+        customDecks: savedDecks ? (JSON.parse(savedDecks) as Deck[]) : s.customDecks,
         hydrated: true,
       };
+    });
+  },
+
+  saveCustomDeck(deck) {
+    set((s) => {
+      const existing = s.customDecks.findIndex((d) => d.id === deck.id);
+      const customDecks =
+        existing >= 0
+          ? s.customDecks.map((d) => (d.id === deck.id ? deck : d))
+          : [...s.customDecks, deck];
+      void localKeyValueStore.set(CUSTOM_DECKS_KEY, JSON.stringify(customDecks));
+      return { customDecks };
+    });
+  },
+
+  deleteCustomDeck(id) {
+    set((s) => {
+      const customDecks = s.customDecks.filter((d) => d.id !== id);
+      void localKeyValueStore.set(CUSTOM_DECKS_KEY, JSON.stringify(customDecks));
+      return { customDecks, deckId: s.deckId === id ? null : s.deckId };
     });
   },
 
@@ -117,8 +152,8 @@ export const useGameStore = create<GameStore>((set, get) => ({
   },
 
   startGame() {
-    const { deckId, config, players } = get();
-    const deck = deckId ? getDeck(deckId) : undefined;
+    const { deckId, config, players, customDecks } = get();
+    const deck = findDeck(deckId, customDecks);
     if (!deck) return false;
     const tracks = eligibleTracks(deck, config.mode);
     if (tracks.length === 0) return false;
