@@ -1,0 +1,641 @@
+{
+  "id": "rock-legends",
+  "reports": [
+    {
+      "seed": {
+        "term": "Bohemian Rhapsody",
+        "artist": "Queen",
+        "year": 1975
+      },
+      "matched": true,
+      "chosen": {
+        "id": "itunes:1440806768",
+        "title": "Bohemian Rhapsody",
+        "artist": "Queen",
+        "album": "A Night at the Opera",
+        "releaseYear": 1975,
+        "releaseDate": "1975-11-21T08:00:00Z",
+        "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/35/5e/92/355e924d-728f-a25c-5e69-d8c53561658f/mzaf_3026523263970634353.plus.aac.p.m4a",
+        "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/b1/a9/84/b1a984dc-8dce-e8cb-1a0e-20293f7c500a/14DMGIM05548.rgb.jpg/600x600bb.jpg",
+        "durationMs": 354320,
+        "source": "itunes",
+        "yearVerified": true
+      },
+      "alternatives": [
+        {
+          "title": "Bohemian Rhapsody",
+          "artist": "Queen",
+          "album": "Greatest Hits I, II & III: The Platinum Collection",
+          "year": 1975
+        },
+        {
+          "title": "Bohemian Rhapsody (Live)",
+          "artist": "Queen",
+          "album": "Live at Wembley Stadium",
+          "year": 1992
+        },
+        {
+          "title": "Bohemian Rhapsody",
+          "artist": "Queen",
+          "album": "A Night at the Opera",
+          "year": 1975
+        },
+        {
+          "title": "Bohemian Rhapsody",
+          "artist": "Queen",
+          "album": "A Night at the Opera (Deluxe Edition)",
+          "year": 1975
+        },
+        {
+          "title": "Bohemian Rhapsody",
+          "artist": "Queen",
+          "album": "Greatest Hits (1981 UK Edition)",
+          "year": 1975
+        }
+      ]
+    },
+    {
+      "seed": {
+        "term": "Stairway to Heaven",
+        "artist": "Led Zeppelin",
+        "year": 1971
+      },
+      "matched": true,
+      "chosen": {
+        "id": "itunes:580708180",
+        "title": "Stairway to Heaven",
+        "artist": "Led Zeppelin",
+        "album": "Led Zeppelin IV (Remastered)",
+        "releaseYear": 1971,
+        "releaseDate": "1971-11-08T08:00:00Z",
+        "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/60/61/5f/60615fd1-7425-78b3-21ab-fed7411a89ea/mzaf_7178841208140363975.plus.aac.p.m4a",
+        "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/5c/15/9b/5c159b27-95ca-b9a7-84e3-28e795fffd39/dj.kvkrpptq.jpg/600x600bb.jpg",
+        "durationMs": 482830,
+        "source": "itunes",
+        "yearVerified": true
+      },
+      "alternatives": [
+        {
+          "title": "Stairway to Heaven",
+          "artist": "Led Zeppelin",
+          "album": "Led Zeppelin IV (Remastered)",
+          "year": 1971
+        },
+        {
+          "title": "Stairway to Heaven (Live)",
+          "artist": "Led Zeppelin",
+          "album": "The Song Remains the Same (Original Motion Picture Soundtrack) [Live] [Remastered]",
+          "year": 1976
+        },
+        {
+          "title": "Stairway to Heaven (Live)",
+          "artist": "Led Zeppelin",
+          "album": "How the West Was Won (Live) [Remastered]",
+          "year": 2003
+        },
+        {
+          "title": "Stairway to Heaven (Sunset Sound Mix)",
+          "artist": "Led Zeppelin",
+          "album": "Led Zeppelin IV (Deluxe Edition)",
+          "year": 2014
+        },
+        {
+          "title": "Stairway to Heaven (Live)",
+          "artist": "Led Zeppelin",
+          "album": "Celebration Day (Live At O2 Arena, London)",
+          "year": 2012
+        }
+      ]
+    },
+    {
+      "seed": {
+        "term": "Paint It Black",
+        "artist": "The Rolling Stones",
+        "year": 1966
+      },
+      "matched": true,
+      "chosen": {
+        "id": "itunes:1440745782",
+        "title": "Paint It, Black",
+        "artist": "The Rolling Stones",
+        "album": "Aftermath (US Version)",
+        "releaseYear": 1966,
+        "releaseDate": "1966-04-15T12:00:00Z",
+        "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/da/f5/ec/daf5ece2-6853-c6a4-d481-389001453f75/mzaf_3869995397273029315.plus.aac.p.m4a",
+        "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/cd/89/04/cd890449-e58f-7257-2c60-9c8c31f24ce3/13ABKIM00063.rgb.jpg/600x600bb.jpg",
+        "durationMs": 202453,
+        "source": "itunes",
+        "yearVerified": true
+      },
+      "alternatives": [
+        {
+          "title": "Paint It, Black",
+          "artist": "The Rolling Stones",
+          "album": "Aftermath (US Version)",
+          "year": 1966
+        },
+        {
+          "title": "Paint It, Black",
+          "artist": "The Rolling Stones",
+          "album": "BBQ Classics",
+          "year": 1966
+        },
+        {
+          "title": "Paint It Black",
+          "artist": "The Rolling Stones",
+          "album": "Hot Rocks 1964-1971",
+          "year": 1966
+        },
+        {
+          "title": "Paint It Black (Mono)",
+          "artist": "The Rolling Stones",
+          "album": "Aftermath",
+          "year": 1966
+        },
+        {
+          "title": "Paint It Black",
+          "artist": "The Rolling Stones",
+          "album": "The Rolling Stones Singles Collection: The London Years",
+          "year": 1966
+        }
+      ]
+    },
+    {
+      "seed": {
+        "term": "Come Together",
+        "artist": "The Beatles",
+        "year": 1969
+      },
+      "matched": true,
+      "chosen": {
+        "id": "itunes:1441164430",
+        "title": "Come Together",
+        "artist": "The Beatles",
+        "album": "Abbey Road (Remastered)",
+        "releaseYear": 1969,
+        "releaseDate": "1969-09-26T12:00:00Z",
+        "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/c1/9a/be/c19abef9-cca4-ffaa-bc87-ed5f46ec2e59/mzaf_12195798000058662622.plus.aac.p.m4a",
+        "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/df/db/61/dfdb615d-47f8-06e9-9533-b96daccc029f/18UMGIM31076.rgb.jpg/600x600bb.jpg",
+        "durationMs": 258947,
+        "source": "itunes",
+        "yearVerified": true
+      },
+      "alternatives": [
+        {
+          "title": "Come Together",
+          "artist": "The Beatles",
+          "album": "Abbey Road (Remastered)",
+          "year": 1969
+        },
+        {
+          "title": "Come Together (Take 5)",
+          "artist": "The Beatles",
+          "album": "Abbey Road (Super Deluxe Edition) [2019 Remix & Remaster]",
+          "year": 2019
+        },
+        {
+          "title": "Come Together (Take 1)",
+          "artist": "The Beatles",
+          "album": "Anthology 3",
+          "year": 1996
+        },
+        {
+          "title": "Come Together (2019 Mix)",
+          "artist": "The Beatles",
+          "album": "Abbey Road (Super Deluxe Edition) [2019 Remix & Remaster]",
+          "year": 1969
+        },
+        {
+          "title": "Come Together (2019 Mix)",
+          "artist": "The Beatles",
+          "album": "Abbey Road (2019 Mix)",
+          "year": 1969
+        }
+      ]
+    },
+    {
+      "seed": {
+        "term": "Smells Like Teen Spirit",
+        "artist": "Nirvana",
+        "year": 1991
+      },
+      "matched": true,
+      "chosen": {
+        "id": "itunes:1440783625",
+        "title": "Smells Like Teen Spirit",
+        "artist": "Nirvana",
+        "album": "Nevermind",
+        "releaseYear": 1991,
+        "releaseDate": "1991-09-10T12:00:00Z",
+        "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/a6/53/1e/a6531efa-397c-eb73-ecab-9b2790c1471e/mzaf_16440344883389407474.plus.aac.p.m4a",
+        "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/95/fd/b9/95fdb9b2-6d2b-92a6-97f2-51c1a6d77f1a/00602527874609.rgb.jpg/600x600bb.jpg",
+        "durationMs": 301096,
+        "source": "itunes",
+        "yearVerified": true
+      },
+      "alternatives": [
+        {
+          "title": "Smells Like Teen Spirit",
+          "artist": "Nirvana",
+          "album": "Nevermind",
+          "year": 1991
+        },
+        {
+          "title": "Smells Like Teen Spirit (Devonshire Mix)",
+          "artist": "Nirvana",
+          "album": "Nevermind (Super Deluxe Edition)",
+          "year": 1991
+        },
+        {
+          "title": "Smells Like Teen Spirit",
+          "artist": "Nirvana",
+          "album": "Nirvana",
+          "year": 1991
+        },
+        {
+          "title": "Smells Like Teen Spirit (ATLiens Remix) [Mixed]",
+          "artist": "Nirvana",
+          "album": "ATLiens Live at Lost Lands 2024 (DJ Mix)",
+          "year": 2024
+        },
+        {
+          "title": "Smells Like Teen Spirit (Live at The Paramount, 1991)",
+          "artist": "Nirvana",
+          "album": "Live at the Paramount",
+          "year": 2011
+        }
+      ]
+    },
+    {
+      "seed": {
+        "term": "Sweet Child o' Mine",
+        "artist": "Guns N' Roses",
+        "year": 1987
+      },
+      "matched": true,
+      "chosen": {
+        "id": "itunes:1377813701",
+        "title": "Sweet Child O' Mine",
+        "artist": "Guns N' Roses",
+        "album": "Appetite For Destruction",
+        "releaseYear": 1987,
+        "releaseDate": "1987-07-21T12:00:00Z",
+        "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a5/82/2d/a5822d67-2e65-fe95-511e-1f785d23e5cc/mzaf_8619467974951398014.plus.aac.p.m4a",
+        "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/a0/4d/c4/a04dc484-03cc-02aa-fa82-5334fcb4bc16/18UMGIM24878.rgb.jpg/600x600bb.jpg",
+        "durationMs": 356067,
+        "source": "itunes",
+        "yearVerified": true
+      },
+      "alternatives": [
+        {
+          "title": "Sweet Child O' Mine",
+          "artist": "Guns N' Roses",
+          "album": "Appetite For Destruction",
+          "year": 1987
+        },
+        {
+          "title": "Sweet Child O' Mine (Live In Las Vegas, Thomas & Mack Center - January 25, 1992)",
+          "artist": "Guns N' Roses",
+          "album": "Use Your Illusion (Super Deluxe)",
+          "year": 1991
+        },
+        {
+          "title": "Sweet Child O' Mine",
+          "artist": "Rockabye Baby!",
+          "album": "Lullaby Renditions of Guns N' Roses",
+          "year": 2009
+        },
+        {
+          "title": "Sweet Child O' Mine",
+          "artist": "Guns N' Roses",
+          "album": "Discover More Classic Rock",
+          "year": 1987
+        },
+        {
+          "title": "Sweet Child O' Mine",
+          "artist": "Guns N' Roses",
+          "album": "Appetite for Destruction",
+          "year": 1987
+        }
+      ]
+    },
+    {
+      "seed": {
+        "term": "Back in Black",
+        "artist": "AC/DC",
+        "year": 1980
+      },
+      "matched": true,
+      "chosen": {
+        "id": "itunes:574050602",
+        "title": "Back In Black",
+        "artist": "AC/DC",
+        "album": "Back In Black",
+        "releaseYear": 1980,
+        "releaseDate": "1980-07-25T07:00:00Z",
+        "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/b5/14/aa/b514aa08-4772-93db-c69f-420fbe0bb24c/mzaf_17779796508174317776.plus.aac.p.m4a",
+        "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/1e/14/58/1e145814-281a-58e0-3ab1-145f5d1af421/886443673441.jpg/600x600bb.jpg",
+        "durationMs": 256000,
+        "source": "itunes",
+        "yearVerified": true
+      },
+      "alternatives": [
+        {
+          "title": "Back In Black",
+          "artist": "AC/DC",
+          "album": "Back In Black",
+          "year": 1980
+        },
+        {
+          "title": "You Shook Me All Night Long",
+          "artist": "AC/DC",
+          "album": "Back In Black",
+          "year": 1980
+        },
+        {
+          "title": "Hells Bells",
+          "artist": "AC/DC",
+          "album": "Back In Black",
+          "year": 1980
+        },
+        {
+          "title": "Shoot to Thrill",
+          "artist": "AC/DC",
+          "album": "Back In Black",
+          "year": 1980
+        },
+        {
+          "title": "Have a Drink On Me",
+          "artist": "AC/DC",
+          "album": "Back In Black",
+          "year": 1980
+        }
+      ]
+    },
+    {
+      "seed": {
+        "term": "Enter Sandman",
+        "artist": "Metallica",
+        "year": 1991
+      },
+      "matched": true,
+      "chosen": {
+        "id": "itunes:1572051818",
+        "title": "Enter Sandman",
+        "artist": "Metallica",
+        "album": "Metallica (Deluxe Box Set)",
+        "releaseYear": 1991,
+        "releaseDate": "1991-07-29T12:00:00Z",
+        "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview115/v4/85/a5/65/85a565a5-c992-0a77-a1be-c4b190c7f395/mzaf_12174803259665081383.plus.aac.p.m4a",
+        "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/2e/94/95/2e9495d7-dfe3-ddc8-87ef-6ef797a60218/850007452056.png/600x600bb.jpg",
+        "durationMs": 331560,
+        "source": "itunes",
+        "yearVerified": true
+      },
+      "alternatives": [
+        {
+          "title": "Enter Sandman",
+          "artist": "Metallica",
+          "album": "Metallica (Deluxe Box Set)",
+          "year": 1991
+        },
+        {
+          "title": "Enter Sandman (Radio Edit)",
+          "artist": "Metallica",
+          "album": "Metallica (Deluxe Box Set)",
+          "year": 1991
+        },
+        {
+          "title": "Enter Sandman (Live)",
+          "artist": "Metallica",
+          "album": "M72 World Tour: Mexico City",
+          "year": 2025
+        },
+        {
+          "title": "Enter Sandman",
+          "artist": "Weezer",
+          "album": "The Metallica Blacklist",
+          "year": 2021
+        },
+        {
+          "title": "Enter Sandman (Live at Tushino Airfield, Moscow, Russia, 09/28/91)",
+          "artist": "Metallica",
+          "album": "Metallica (Deluxe Box Set)",
+          "year": 1991
+        }
+      ]
+    },
+    {
+      "seed": {
+        "term": "Baba O'Riley",
+        "artist": "The Who",
+        "year": 1971
+      },
+      "matched": true,
+      "chosen": {
+        "id": "itunes:1440815872",
+        "title": "Baba O'Riley",
+        "artist": "The Who",
+        "album": "Who's Next (Bonus Track Version)",
+        "releaseYear": 1971,
+        "releaseDate": "1971-08-14T07:00:00Z",
+        "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/fa/1a/53/fa1a5312-7f06-95e6-ebcb-582ed3ee82ff/mzaf_11529754895597801709.plus.aac.p.m4a",
+        "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/4e/d5/19/4ed519ca-3f8b-65ee-eb21-89d5c6a0b44e/00602547140265.rgb.jpg/600x600bb.jpg",
+        "durationMs": 299876,
+        "source": "itunes",
+        "yearVerified": true
+      },
+      "alternatives": [
+        {
+          "title": "Baba O'Riley",
+          "artist": "The Who",
+          "album": "Who's Next (Bonus Track Version)",
+          "year": 1971
+        },
+        {
+          "title": "Baba O'Riley (Original Demo / Remastered 2022)",
+          "artist": "The Who",
+          "album": "Who’s Next : Life House (Super Deluxe)",
+          "year": 1971
+        },
+        {
+          "title": "Baba O'Riley (Live at Shepperton)",
+          "artist": "The Who",
+          "album": "The Kids Are Alright (Original Motion Picture Soundtrack)",
+          "year": 1979
+        },
+        {
+          "title": "Baba O'Riley (ConfidentialMX Remix)",
+          "artist": "The Who",
+          "album": "Stranger Things: Soundtrack from the Netflix Original Series, Season 3",
+          "year": 2019
+        },
+        {
+          "title": "Baba O'Riley (Live At Universal Amphitheatre 1989)",
+          "artist": "The Who",
+          "album": "Greatest Hits Live",
+          "year": 2010
+        }
+      ]
+    },
+    {
+      "seed": {
+        "term": "Money",
+        "artist": "Pink Floyd",
+        "year": 1973
+      },
+      "matched": true,
+      "chosen": {
+        "id": "itunes:1665303764",
+        "title": "Money",
+        "artist": "Pink Floyd",
+        "album": "The Dark Side of the Moon (50th Anniversary) [Remastered]",
+        "releaseYear": 1973,
+        "releaseDate": "1973-03-01T12:00:00Z",
+        "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a4/c2/0a/a4c20a23-7459-787a-3ab5-20ff1dac1249/mzaf_9883150736120302811.plus.aac.p.m4a",
+        "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/49/86/18/49861852-877b-0992-fa27-58b25fa032b5/196589805232.jpg/600x600bb.jpg",
+        "durationMs": 382200,
+        "source": "itunes",
+        "yearVerified": true
+      },
+      "alternatives": [
+        {
+          "title": "Money",
+          "artist": "Pink Floyd",
+          "album": "Echoes: The Best of Pink Floyd",
+          "year": 1973
+        },
+        {
+          "title": "Money (Re-Recorded 1981)",
+          "artist": "Pink Floyd",
+          "album": "A Collection of Great Dance Songs",
+          "year": 1981
+        },
+        {
+          "title": "Money (Live)",
+          "artist": "Pink Floyd",
+          "album": "Pulse (Live)",
+          "year": 1995
+        },
+        {
+          "title": "Money",
+          "artist": "Pink Floyd",
+          "album": "The Dark Side of the Moon (50th Anniversary) [Remastered]",
+          "year": 1973
+        },
+        {
+          "title": "Money (Early Mix)",
+          "artist": "Pink Floyd",
+          "album": "Money (Early Mix) - Single",
+          "year": 2011
+        }
+      ]
+    },
+    {
+      "seed": {
+        "term": "Dream On",
+        "artist": "Aerosmith",
+        "year": 1973
+      },
+      "matched": true,
+      "chosen": {
+        "id": "itunes:1658644941",
+        "title": "Dream On",
+        "artist": "Aerosmith",
+        "album": "Aerosmith",
+        "releaseYear": 1973,
+        "releaseDate": "1973-01-05T12:00:00Z",
+        "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f8/96/43/f89643b7-3efa-9f43-0a78-394abf12864b/mzaf_3399344087154345151.plus.aac.p.m4a",
+        "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/e2/87/d9/e287d987-7b92-7749-737f-b5b8a6913f88/22UM1IM38560.rgb.jpg/600x600bb.jpg",
+        "durationMs": 267597,
+        "source": "itunes",
+        "yearVerified": true
+      },
+      "alternatives": [
+        {
+          "title": "Dream On",
+          "artist": "Aerosmith",
+          "album": "Aerosmith",
+          "year": 1973
+        },
+        {
+          "title": "Dream On (2024 Mix)",
+          "artist": "Aerosmith",
+          "album": "Aerosmith (Legendary Expanded Edition)",
+          "year": 2026
+        },
+        {
+          "title": "Dream On (1971 Demo)",
+          "artist": "Aerosmith",
+          "album": "1971: The Road Starts Hear",
+          "year": 2021
+        },
+        {
+          "title": "Dream On (Live)",
+          "artist": "Aerosmith",
+          "album": "Classics Live!",
+          "year": 1986
+        },
+        {
+          "title": "Dream On (Live at Freedom Hall, Louisville, KY - July 1977)",
+          "artist": "Aerosmith",
+          "album": "Live! Bootleg",
+          "year": 1978
+        }
+      ]
+    },
+    {
+      "seed": {
+        "term": "Californication",
+        "artist": "Red Hot Chili Peppers",
+        "year": 1999
+      },
+      "matched": true,
+      "chosen": {
+        "id": "itunes:945575413",
+        "title": "Californication",
+        "artist": "Red Hot Chili Peppers",
+        "album": "Californication (Remastered)",
+        "releaseYear": 1999,
+        "releaseDate": "1999-06-08T07:00:00Z",
+        "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/30/57/a2/3057a2dc-cbd7-bea7-66fd-7680c0a47c68/mzaf_7704768448750272219.plus.aac.p.m4a",
+        "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music124/v4/4c/86/1d/4c861dab-5428-f3b7-8068-82bb69db5e89/093624932130.jpg/600x600bb.jpg",
+        "durationMs": 321366,
+        "source": "itunes",
+        "yearVerified": true
+      },
+      "alternatives": [
+        {
+          "title": "Californication",
+          "artist": "Red Hot Chili Peppers",
+          "album": "Californication (Remastered)",
+          "year": 1999
+        },
+        {
+          "title": "Scar Tissue",
+          "artist": "Red Hot Chili Peppers",
+          "album": "Californication (Deluxe Edition)",
+          "year": 1999
+        },
+        {
+          "title": "Otherside",
+          "artist": "Red Hot Chili Peppers",
+          "album": "Californication (Deluxe Edition)",
+          "year": 1999
+        },
+        {
+          "title": "Dani California",
+          "artist": "Red Hot Chili Peppers",
+          "album": "Stadium Arcadium",
+          "year": 2006
+        },
+        {
+          "title": "Snow (Hey Oh)",
+          "artist": "Red Hot Chili Peppers",
+          "album": "Snow (Hey Oh) - Single",
+          "year": 2006
+        }
+      ]
+    }
+  ]
+}

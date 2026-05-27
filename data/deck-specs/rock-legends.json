@@ -1,0 +1,19 @@
+{
+  "id": "rock-legends",
+  "name": "Rock Legends",
+  "description": "Stadium-filling rock anthems from the 60s to the 90s.",
+  "seeds": [
+    { "term": "Bohemian Rhapsody", "artist": "Queen", "year": 1975 },
+    { "term": "Stairway to Heaven", "artist": "Led Zeppelin", "year": 1971 },
+    { "term": "Paint It Black", "artist": "The Rolling Stones", "year": 1966 },
+    { "term": "Come Together", "artist": "The Beatles", "year": 1969 },
+    { "term": "Smells Like Teen Spirit", "artist": "Nirvana", "year": 1991 },
+    { "term": "Sweet Child o' Mine", "artist": "Guns N' Roses", "year": 1987 },
+    { "term": "Back in Black", "artist": "AC/DC", "year": 1980 },
+    { "term": "Enter Sandman", "artist": "Metallica", "year": 1991 },
+    { "term": "Baba O'Riley", "artist": "The Who", "year": 1971 },
+    { "term": "Money", "artist": "Pink Floyd", "year": 1973 },
+    { "term": "Dream On", "artist": "Aerosmith", "year": 1973 },
+    { "term": "Californication", "artist": "Red Hot Chili Peppers", "year": 1999 }
+  ]
+}

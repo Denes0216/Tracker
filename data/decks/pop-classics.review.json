@@ -1,0 +1,641 @@
+{
+  "id": "pop-classics",
+  "reports": [
+    {
+      "seed": {
+        "term": "Billie Jean",
+        "artist": "Michael Jackson",
+        "year": 1983
+      },
+      "matched": true,
+      "chosen": {
+        "id": "itunes:269573364",
+        "title": "Billie Jean",
+        "artist": "Michael Jackson",
+        "album": "Thriller",
+        "releaseYear": 1983,
+        "releaseDate": "1982-11-29T08:00:00Z",
+        "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/dc/bc/8a/dcbc8a3e-4ce1-c00d-cc02-eda2212053c7/mzaf_8347559338388601510.plus.aac.p.m4a",
+        "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/32/4f/fd/324ffda2-9e51-8f6a-0c2d-c6fd2b41ac55/074643811224.jpg/600x600bb.jpg",
+        "durationMs": 293802,
+        "source": "itunes",
+        "yearVerified": true
+      },
+      "alternatives": [
+        {
+          "title": "Billie Jean",
+          "artist": "Michael Jackson",
+          "album": "Thriller",
+          "year": 1982
+        },
+        {
+          "title": "Billie Jean (1981 Home Demo)",
+          "artist": "Michael Jackson",
+          "album": "Thriller (25th Anniversary) [Deluxe Edition]",
+          "year": 1982
+        },
+        {
+          "title": "Billie Jean (Live)",
+          "artist": "Michael Jackson",
+          "album": "Live At Wembley July 16, 1988",
+          "year": 2012
+        },
+        {
+          "title": "Billie Jean",
+          "artist": "Michael Jackson",
+          "album": "Thriller",
+          "year": 1982
+        },
+        {
+          "title": "Billie Jean",
+          "artist": "Michael Jackson",
+          "album": "Michael: Songs From The Motion Picture",
+          "year": 1982
+        }
+      ]
+    },
+    {
+      "seed": {
+        "term": "Like a Prayer",
+        "artist": "Madonna",
+        "year": 1989
+      },
+      "matched": true,
+      "chosen": {
+        "id": "itunes:83445997",
+        "title": "Like a Prayer",
+        "artist": "Madonna",
+        "album": "Like a Prayer",
+        "releaseYear": 1989,
+        "releaseDate": "1989-03-03T08:00:00Z",
+        "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/0b/23/82/0b238289-52e2-2107-5531-181836267ed2/mzaf_6726729811402686020.plus.aac.p.m4a",
+        "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music114/v4/20/3c/f5/203cf53d-689e-528f-29d7-ba33758254aa/mzi.rotbotfl.jpg/600x600bb.jpg",
+        "durationMs": 340867,
+        "source": "itunes",
+        "yearVerified": true
+      },
+      "alternatives": [
+        {
+          "title": "Like a Prayer",
+          "artist": "Madonna",
+          "album": "Like a Prayer",
+          "year": 1989
+        },
+        {
+          "title": "Like a Prayer",
+          "artist": "Madonna",
+          "album": "The Immaculate Collection",
+          "year": 1989
+        },
+        {
+          "title": "Like a Prayer (Choir Version From “Deadpool & Wolverine”)",
+          "artist": "I'll Take You There Choir",
+          "album": "Deadpool & Wolverine: Madonna's \"Like a Prayer\" - EP",
+          "year": 2024
+        },
+        {
+          "title": "Like a Prayer (Battle Royale Mix from “Deadpool & Wolverine”)",
+          "artist": "Madonna",
+          "album": "Deadpool & Wolverine: Madonna's \"Like a Prayer\" - EP",
+          "year": 1985
+        },
+        {
+          "title": "Like a Prayer",
+          "artist": "Madonna",
+          "album": "Celebration (Deluxe Version)",
+          "year": 1989
+        }
+      ]
+    },
+    {
+      "seed": {
+        "term": "I Wanna Dance with Somebody",
+        "artist": "Whitney Houston",
+        "year": 1987
+      },
+      "matched": true,
+      "chosen": {
+        "id": "itunes:840431935",
+        "title": "I Wanna Dance with Somebody (Who Loves Me)",
+        "artist": "Whitney Houston",
+        "album": "Whitney",
+        "releaseYear": 1987,
+        "releaseDate": "1987-05-02T07:00:00Z",
+        "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/7b/67/fd/7b67fd07-6a7a-0362-135c-878ac5799f2c/mzaf_11309521725869189721.plus.aac.p.m4a",
+        "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/86/b5/25/86b525b1-bff1-4bf6-6112-531251b3d672/dj.hthdmusj.jpg/600x600bb.jpg",
+        "durationMs": 292875,
+        "source": "itunes",
+        "yearVerified": true
+      },
+      "alternatives": [
+        {
+          "title": "I Wanna Dance with Somebody (Who Loves Me)",
+          "artist": "Whitney Houston",
+          "album": "Whitney",
+          "year": 1987
+        },
+        {
+          "title": "I Wanna Dance With Somebody (Who Loves Me)",
+          "artist": "Calum Scott & Whitney Houston",
+          "album": "Avenoir",
+          "year": 2025
+        },
+        {
+          "title": "I Wanna Dance with Somebody (Who Loves Me) [David Solomon Remix]",
+          "artist": "Whitney Houston & David Solomon",
+          "album": "I Wanna Dance with Somebody (Who Loves Me) [David Solomon Remix] - Single",
+          "year": 2022
+        },
+        {
+          "title": "I Wanna Dance with Somebody (Who Loves Me) [Remix] [Mixed]",
+          "artist": "Whitney Houston",
+          "album": "Pure Throwback Radio: Spring Break (DJ Mix)",
+          "year": 2023
+        },
+        {
+          "title": "I Wanna Dance With Somebody (Junior's Happy Handbag Mix)",
+          "artist": "Whitney Houston",
+          "album": "Whitney The Greatest Hits",
+          "year": 1996
+        }
+      ]
+    },
+    {
+      "seed": {
+        "term": "Wannabe",
+        "artist": "Spice Girls",
+        "year": 1996
+      },
+      "matched": true,
+      "chosen": {
+        "id": "itunes:1573849255",
+        "title": "Wannabe",
+        "artist": "Spice Girls",
+        "album": "Wannabe 25 - EP",
+        "releaseYear": 1996,
+        "releaseDate": "1996-06-26T12:00:00Z",
+        "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/db/cb/c6/dbcbc688-8277-b365-8deb-1da3c30da079/mzaf_7842872759474974048.plus.aac.p.m4a",
+        "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/e1/92/8f/e1928fcb-0204-ca19-597a-6edaf8e6ebc8/21UMGIM16233.rgb.jpg/600x600bb.jpg",
+        "durationMs": 176480,
+        "source": "itunes",
+        "yearVerified": true
+      },
+      "alternatives": [
+        {
+          "title": "Wannabe",
+          "artist": "Spice Girls",
+          "album": "Wannabe 25 - EP",
+          "year": 1996
+        },
+        {
+          "title": "Wannabe (Radio Edit)",
+          "artist": "Spice Girls",
+          "album": "Spice",
+          "year": 1996
+        },
+        {
+          "title": "Wannabe (Remix) [Mixed]",
+          "artist": "Spice Girls",
+          "album": "Boiler Room: Miss Champús, Streaming From Isolation, Jul 30, 2020 (DJ Mix)",
+          "year": 2020
+        },
+        {
+          "title": "Wannabe (Dave Way Alternative Mix)",
+          "artist": "Spice Girls",
+          "album": "Spice (25th Anniversary / Deluxe Edition)",
+          "year": 1996
+        },
+        {
+          "title": "Wannabe (Junior Vasquez Remix Edit)",
+          "artist": "Spice Girls",
+          "album": "2 Become 1 - EP",
+          "year": 1996
+        }
+      ]
+    },
+    {
+      "seed": {
+        "term": "...Baby One More Time",
+        "artist": "Britney Spears",
+        "year": 1998
+      },
+      "matched": true,
+      "chosen": {
+        "id": "itunes:273143820",
+        "title": "...Baby One More Time",
+        "artist": "Britney Spears",
+        "album": "...Baby One More Time (Deluxe Version)",
+        "releaseYear": 1998,
+        "releaseDate": "1998-09-29T07:00:00Z",
+        "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/49/6a/b2/496ab286-3c2d-91f9-2d83-2dc2d7d0ed39/mzaf_9080140052391941165.plus.aac.p.m4a",
+        "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/51/73/28/5173280b-9b5e-c5e4-d3f8-a2612d044543/888880423368.jpg/600x600bb.jpg",
+        "durationMs": 211067,
+        "source": "itunes",
+        "yearVerified": true
+      },
+      "alternatives": [
+        {
+          "title": "...Baby One More Time",
+          "artist": "Britney Spears",
+          "album": "...Baby One More Time (Deluxe Version)",
+          "year": 1998
+        },
+        {
+          "title": "...Baby One More Time (Davidson Ospina 2005 Mix)",
+          "artist": "Britney Spears",
+          "album": "B in the Mix, The Remixes [Deluxe Version]",
+          "year": 2005
+        },
+        {
+          "title": "...Baby One More Time",
+          "artist": "The Marías",
+          "album": "...Baby One More Time - Single",
+          "year": 2019
+        },
+        {
+          "title": "...Baby One More Time (RetroVison Remix) [Mixed]",
+          "artist": "Britney Spears",
+          "album": "Songs You've Been Asking For, Vol. 3 (DJ Mix)",
+          "year": 2023
+        },
+        {
+          "title": "...Baby One More Time (Davidson Ospina Radio Mix)",
+          "artist": "Britney Spears",
+          "album": "...Baby One More Time (Deluxe Version)",
+          "year": 1999
+        }
+      ]
+    },
+    {
+      "seed": {
+        "term": "I Want It That Way",
+        "artist": "Backstreet Boys",
+        "year": 1999
+      },
+      "matched": true,
+      "chosen": {
+        "id": "itunes:283567164",
+        "title": "I Want It That Way",
+        "artist": "Backstreet Boys",
+        "album": "Millennium",
+        "releaseYear": 1999,
+        "releaseDate": "1999-04-12T07:00:00Z",
+        "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/12/cd/f8/12cdf81c-f174-cd45-9a56-9b2388df9e63/mzaf_2642298639219088626.plus.aac.p.m4a",
+        "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/5f/6b/e9/5f6be919-1b9e-30ef-45b7-cc27fc428fd5/012414167224.jpg/600x600bb.jpg",
+        "durationMs": 213307,
+        "source": "itunes",
+        "yearVerified": true
+      },
+      "alternatives": [
+        {
+          "title": "I Want It That Way",
+          "artist": "Backstreet Boys",
+          "album": "Millennium",
+          "year": 1999
+        },
+        {
+          "title": "I Want It That Way (Live at the Conseco Fieldhouse - Indianapolis, Indiana)",
+          "artist": "Backstreet Boys",
+          "album": "Millennium 2.0",
+          "year": 2025
+        },
+        {
+          "title": "I Want It That Way",
+          "artist": "Backstreet Boys",
+          "album": "The Hits - Chapter One",
+          "year": 1999
+        },
+        {
+          "title": "I Want It That Way (Mixed)",
+          "artist": "Backstreet Boys",
+          "album": "Pure Throwback Radio: POP Goes the Decade: Y2K (DJ Mix)",
+          "year": 2024
+        },
+        {
+          "title": "I Want It That Way",
+          "artist": "Backstreet Boys",
+          "album": "Beach Holiday Classics",
+          "year": 1999
+        }
+      ]
+    },
+    {
+      "seed": {
+        "term": "Poker Face",
+        "artist": "Lady Gaga",
+        "year": 2008
+      },
+      "matched": true,
+      "chosen": {
+        "id": "itunes:1577631231",
+        "title": "Poker Face",
+        "artist": "Lady Gaga",
+        "album": "Girl Power",
+        "releaseYear": 2008,
+        "releaseDate": "2008-08-19T12:00:00Z",
+        "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/7b/d4/b9/7bd4b972-99ea-4ce7-9042-615a894173a4/mzaf_17216069970734143078.plus.aac.p.m4a",
+        "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/35/0d/d6/350dd697-4b78-8aaf-cf65-74b96c1adab8/21UMGIM68808.rgb.jpg/600x600bb.jpg",
+        "durationMs": 238907,
+        "source": "itunes",
+        "yearVerified": true
+      },
+      "alternatives": [
+        {
+          "title": "Poker Face",
+          "artist": "Lady Gaga",
+          "album": "Girl Power",
+          "year": 2008
+        },
+        {
+          "title": "Poker Face (Glam As You Radio Mix)",
+          "artist": "Lady Gaga",
+          "album": "Poker Face (Remixes Part 1) - EP",
+          "year": 2008
+        },
+        {
+          "title": "Poker Face",
+          "artist": "Lady Gaga",
+          "album": "Girl Power Hits",
+          "year": 2008
+        },
+        {
+          "title": "Poker Face",
+          "artist": "Lady Gaga",
+          "album": "Честит 8-ми март!",
+          "year": 2008
+        },
+        {
+          "title": "Just Dance (feat. Colby O'Donis)",
+          "artist": "Lady Gaga",
+          "album": "The Fame Monster (Deluxe Edition)",
+          "year": 2008
+        }
+      ]
+    },
+    {
+      "seed": {
+        "term": "Umbrella",
+        "artist": "Rihanna",
+        "year": 2007
+      },
+      "matched": true,
+      "chosen": {
+        "id": "itunes:1441154437",
+        "title": "Umbrella (feat. JAŸ-Z)",
+        "artist": "Rihanna",
+        "album": "Good Girl Gone Bad: Reloaded",
+        "releaseYear": 2007,
+        "releaseDate": "2007-03-29T07:00:00Z",
+        "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/7b/45/22/7b452241-882c-409b-3a9b-23306b14286a/mzaf_8588243939716013218.plus.aac.p.m4a",
+        "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/2b/c0/81/2bc081c8-25f0-ba43-d451-587a54613778/16UMGIM59202.rgb.jpg/600x600bb.jpg",
+        "durationMs": 276136,
+        "source": "itunes",
+        "yearVerified": true
+      },
+      "alternatives": [
+        {
+          "title": "Umbrella (feat. JAŸ-Z)",
+          "artist": "Rihanna",
+          "album": "Good Girl Gone Bad: Reloaded",
+          "year": 2007
+        },
+        {
+          "title": "Rihanna (Umbrella)",
+          "artist": "Sean Kingston",
+          "album": "Rihanna (Umbrella) - Single",
+          "year": 2022
+        },
+        {
+          "title": "Umbrella (feat. JAŸ-Z) [Radio Edit]",
+          "artist": "Rihanna featuring Jay-Z",
+          "album": "Umbrella - Single (feat. JAŸ-Z) - Single",
+          "year": 2007
+        },
+        {
+          "title": "Umbrella (feat. JAŸ-Z) [Travis Barker Remix]",
+          "artist": "Rihanna",
+          "album": "Umbrella (Travis Barker Remix) - Single",
+          "year": 2007
+        },
+        {
+          "title": "Umbrella (feat. JAŸ-Z) [Jody den Broeder Lush Club Remix]",
+          "artist": "Rihanna",
+          "album": "Umbrella (feat. JAŸ-Z) [Remixes]",
+          "year": 2007
+        }
+      ]
+    },
+    {
+      "seed": {
+        "term": "Crazy in Love",
+        "artist": "Beyoncé",
+        "year": 2003
+      },
+      "matched": true,
+      "chosen": {
+        "id": "itunes:201274644",
+        "title": "Crazy in Love (feat. JAŸ-Z)",
+        "artist": "Beyoncé",
+        "album": "Dangerously in Love",
+        "releaseYear": 2003,
+        "releaseDate": "2003-05-14T07:00:00Z",
+        "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/b5/2a/4f/b52a4fcd-0628-cb38-c8ab-a697c11a9175/mzaf_1541321636664021445.plus.aac.p.m4a",
+        "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music/03/c5/d4/mzi.ldvrmhxt.jpg/600x600bb.jpg",
+        "durationMs": 236133,
+        "source": "itunes",
+        "yearVerified": true
+      },
+      "alternatives": [
+        {
+          "title": "Crazy in Love (feat. JAŸ-Z)",
+          "artist": "Beyoncé",
+          "album": "Dangerously in Love",
+          "year": 2003
+        },
+        {
+          "title": "Crazy in Love (Remix)",
+          "artist": "Beyoncé",
+          "album": "Crazy in Love (Remix) - Single",
+          "year": 2015
+        },
+        {
+          "title": "Crazy In Love (Live)",
+          "artist": "Beyoncé",
+          "album": "I Am... World Tour",
+          "year": 2010
+        },
+        {
+          "title": "Crazy in Love (Instrumental)",
+          "artist": "Beyoncé",
+          "album": "Beyoncé Live In Vegas (Instrumentals)",
+          "year": 2010
+        },
+        {
+          "title": "Crazy In Love (feat. JAŸ-Z) [Remix] [Mixed]",
+          "artist": "Beyoncé",
+          "album": "The Warehouse Project: Eats Everything in Manchester, Nov 22, 2024 (DJ Mix)",
+          "year": 2024
+        }
+      ]
+    },
+    {
+      "seed": {
+        "term": "Firework",
+        "artist": "Katy Perry",
+        "year": 2010
+      },
+      "matched": true,
+      "chosen": {
+        "id": "itunes:716192625",
+        "title": "Firework",
+        "artist": "Katy Perry",
+        "album": "Teenage Dream",
+        "releaseYear": 2010,
+        "releaseDate": "2010-08-24T07:00:00Z",
+        "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/ab/27/3b/ab273b22-1eb1-dd49-5332-5ef70c35683b/mzaf_4912325324633099647.plus.aac.p.m4a",
+        "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/c8/d3/42/c8d342af-26d9-3ec2-c511-e1eaf860e299/13UABIM57787.rgb.jpg/600x600bb.jpg",
+        "durationMs": 227893,
+        "source": "itunes",
+        "yearVerified": true
+      },
+      "alternatives": [
+        {
+          "title": "Firework",
+          "artist": "Katy Perry",
+          "album": "Teenage Dream",
+          "year": 2010
+        },
+        {
+          "title": "Firework (Alpha Party Remix) [Mixed]",
+          "artist": "Katy Perry",
+          "album": "Pure Throwback Radio: Spring Break (DJ Mix)",
+          "year": 2023
+        },
+        {
+          "title": "Firework",
+          "artist": "Katy Perry",
+          "album": "Teenage Dream: The Complete Confection",
+          "year": 2010
+        },
+        {
+          "title": "Firework (Katy Perry Cover)",
+          "artist": "HelenaMaria",
+          "album": "Firework (Katy Perry Cover) - Single",
+          "year": 2010
+        },
+        {
+          "title": "Firework",
+          "artist": "Katy Perry",
+          "album": "Tween Party",
+          "year": 2010
+        }
+      ]
+    },
+    {
+      "seed": {
+        "term": "Rolling in the Deep",
+        "artist": "Adele",
+        "year": 2010
+      },
+      "matched": true,
+      "chosen": {
+        "id": "itunes:1544491233",
+        "title": "Rolling in the Deep",
+        "artist": "Adele",
+        "album": "21",
+        "releaseYear": 2010,
+        "releaseDate": "2010-11-29T08:00:00Z",
+        "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview125/v4/9f/07/1d/9f071dc7-791c-c869-dfa2-06b25936a287/mzaf_11077490630806345321.plus.aac.p.m4a",
+        "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/eb/ca/25/ebca2596-cd1e-b295-91a3-771c868d0a79/191404113868.png/600x600bb.jpg",
+        "durationMs": 228093,
+        "source": "itunes",
+        "yearVerified": true
+      },
+      "alternatives": [
+        {
+          "title": "Rolling in the Deep",
+          "artist": "Adele",
+          "album": "21",
+          "year": 2010
+        },
+        {
+          "title": "Rolling in the Deep (Live)",
+          "artist": "Adele",
+          "album": "iTunes Festival: London 2011 - EP",
+          "year": 2011
+        },
+        {
+          "title": "Rolling in the Deep (Jamie xx Shuffle)",
+          "artist": "Adele",
+          "album": "Rolling in the Deep (Jamie xx Shuffle) - Single",
+          "year": 2011
+        },
+        {
+          "title": "Rolling In the Deep (The Aretha Version)",
+          "artist": "Aretha Franklin",
+          "album": "Aretha Franklin Sings the Great Diva Classics",
+          "year": 2014
+        },
+        {
+          "title": "Rolling In the Deep (Live)",
+          "artist": "LINKIN PARK",
+          "album": "iTunes Festival: London 2011 - EP",
+          "year": 2011
+        }
+      ]
+    },
+    {
+      "seed": {
+        "term": "Shake It Off",
+        "artist": "Taylor Swift",
+        "year": 2014
+      },
+      "matched": true,
+      "chosen": {
+        "id": "itunes:1440933651",
+        "title": "Shake It Off",
+        "artist": "Taylor Swift",
+        "album": "1989 (Deluxe Edition)",
+        "releaseYear": 2014,
+        "releaseDate": "2014-08-19T07:00:00Z",
+        "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/11/d5/6d/11d56d4a-ce23-e793-8681-70dc4d35d931/mzaf_5886436202259848624.plus.aac.p.m4a",
+        "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/a7/98/d8/a798d867-344d-2bf2-fbfe-d2d1412dcef8/14UMDIM03793.rgb.jpg/600x600bb.jpg",
+        "durationMs": 219200,
+        "source": "itunes",
+        "yearVerified": true
+      },
+      "alternatives": [
+        {
+          "title": "Shake It Off",
+          "artist": "Taylor Swift",
+          "album": "1989 (Deluxe Edition)",
+          "year": 2014
+        },
+        {
+          "title": "Shake It Off (Taylor's Version)",
+          "artist": "Taylor Swift",
+          "album": "1989 (Taylor's Version)",
+          "year": 2023
+        },
+        {
+          "title": "Shake It Off",
+          "artist": "Nick Kroll & Reese Witherspoon",
+          "album": "Sing (Original Motion Picture Soundtrack Deluxe)",
+          "year": 2016
+        },
+        {
+          "title": "Shake It Off",
+          "artist": "Nick Kroll & Reese Witherspoon",
+          "album": "Sing ¡Ven y Canta! (Soundtrack Oficial De Sing: Ven Y Canta Edicion De Lujo)",
+          "year": 2016
+        },
+        {
+          "title": "Shake It Off",
+          "artist": "Taylor Swift",
+          "album": "1989 (Big Machine Radio Release Special)",
+          "year": 2014
+        }
+      ]
+    }
+  ]
+}

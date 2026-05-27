@@ -1,0 +1,19 @@
+{
+  "id": "pop-classics",
+  "name": "Pop Classics",
+  "description": "Chart-topping pop hits from the 80s through the 2010s.",
+  "seeds": [
+    { "term": "Billie Jean", "artist": "Michael Jackson", "year": 1983 },
+    { "term": "Like a Prayer", "artist": "Madonna", "year": 1989 },
+    { "term": "I Wanna Dance with Somebody", "artist": "Whitney Houston", "year": 1987 },
+    { "term": "Wannabe", "artist": "Spice Girls", "year": 1996 },
+    { "term": "...Baby One More Time", "artist": "Britney Spears", "year": 1998 },
+    { "term": "I Want It That Way", "artist": "Backstreet Boys", "year": 1999 },
+    { "term": "Poker Face", "artist": "Lady Gaga", "year": 2008 },
+    { "term": "Umbrella", "artist": "Rihanna", "year": 2007 },
+    { "term": "Crazy in Love", "artist": "Beyoncé", "year": 2003 },
+    { "term": "Firework", "artist": "Katy Perry", "year": 2010 },
+    { "term": "Rolling in the Deep", "artist": "Adele", "year": 2010 },
+    { "term": "Shake It Off", "artist": "Taylor Swift", "year": 2014 }
+  ]
+}
