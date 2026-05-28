@@ -17,6 +17,11 @@ import { normalizeText, similarity, isFuzzyMatch } from '@mgg/game-core';
 import { ITunesProvider } from '@mgg/music';
 import type { DeckSpec, Seed } from './spec.js';
 
+/** Inter-request delay. iTunes rate-limits hard above ~20 req/min. */
+const POLITE_DELAY_MS = 1500;
+/** How long to wait the first time we get a 429/403 before retrying. */
+const RATE_LIMIT_BACKOFF_MS = 60_000;
+
 const HERE = dirname(fileURLToPath(import.meta.url));
 const REPO_ROOT = resolve(HERE, '../../..');
 const SPECS_DIR = join(REPO_ROOT, 'data/deck-specs');
@@ -27,11 +32,20 @@ const COMPILATION_RE =
 
 const delay = (ms: number) => new Promise((r) => setTimeout(r, ms));
 
+/** Fetch with one retry on rate-limit responses (429/403). */
 const httpClient: HttpClient = {
   async get(url: string) {
-    const res = await fetch(url, { headers: { 'User-Agent': 'mgg-deck-builder/0.1' } });
-    if (!res.ok) throw new Error(`HTTP ${res.status} for ${url}`);
-    return res.json();
+    for (let attempt = 0; attempt < 2; attempt++) {
+      const res = await fetch(url, { headers: { 'User-Agent': 'mgg-deck-builder/0.1' } });
+      if (res.ok) return res.json();
+      if ((res.status === 429 || res.status === 403) && attempt === 0) {
+        console.log(`  ↻ rate-limited (${res.status}), waiting ${RATE_LIMIT_BACKOFF_MS / 1000}s…`);
+        await delay(RATE_LIMIT_BACKOFF_MS);
+        continue;
+      }
+      throw new Error(`HTTP ${res.status} for ${url}`);
+    }
+    throw new Error(`HTTP retries exhausted for ${url}`);
   },
 };
 
@@ -84,23 +98,33 @@ async function resolveSeed(seed: Seed): Promise<SeedReport> {
   return { seed, matched: true, chosen, alternatives };
 }
 
-async function buildDeck(spec: DeckSpec): Promise<void> {
-  console.log(`\nBuilding deck "${spec.name}" (${spec.seeds.length} seeds)…`);
-  const reports: SeedReport[] = [];
-  for (const seed of spec.seeds) {
-    try {
-      const report = await resolveSeed(seed);
-      const flag = report.matched ? 'ok ' : 'MISS';
-      console.log(`  [${flag}] ${seed.artist} — ${seed.term} (${seed.year})`);
-      reports.push(report);
-    } catch (err) {
-      console.warn(`  [ERR] ${seed.artist} — ${seed.term}: ${(err as Error).message}`);
-      reports.push({ seed, matched: false, alternatives: [] });
-    }
-    await delay(250); // be polite to the iTunes API
+/** Load a previously-built deck (for resume), or return [] if none. */
+async function loadExistingTracks(specId: string): Promise<Track[]> {
+  try {
+    const raw = await readFile(join(DECKS_DIR, `${specId}.json`), 'utf8');
+    return (JSON.parse(raw) as { tracks?: Track[] }).tracks ?? [];
+  } catch {
+    return [];
   }
+}
 
-  const tracks = reports.filter((r) => r.chosen).map((r) => r.chosen!);
+/** Reuse a previously-resolved track when a seed clearly matches it. */
+function findExistingMatch(seed: Seed, existing: Track[]): Track | undefined {
+  return existing.find(
+    (t) =>
+      similarity(normalizeText(t.artist), normalizeText(seed.artist)) >= 0.6 &&
+      isFuzzyMatch(t.title, seed.term),
+  );
+}
+
+async function writeDeckAndReview(spec: DeckSpec, reports: SeedReport[]): Promise<number> {
+  // Dedupe by resolved iTunes track id — different seed phrasings can land on
+  // the same recording, and the engine samples without replacement.
+  const byId = new Map<string, Track>();
+  for (const r of reports) {
+    if (r.chosen && !byId.has(r.chosen.id)) byId.set(r.chosen.id, r.chosen);
+  }
+  const tracks = [...byId.values()];
   const deck = { id: spec.id, name: spec.name, description: spec.description, tracks };
 
   await mkdir(DECKS_DIR, { recursive: true });
@@ -109,9 +133,42 @@ async function buildDeck(spec: DeckSpec): Promise<void> {
     join(DECKS_DIR, `${spec.id}.review.json`),
     JSON.stringify({ id: spec.id, reports }, null, 2) + '\n',
   );
+  return tracks.length;
+}
 
+async function buildDeck(spec: DeckSpec): Promise<void> {
+  const existing = await loadExistingTracks(spec.id);
+  if (existing.length > 0) {
+    console.log(`\nBuilding deck "${spec.name}" (${spec.seeds.length} seeds, resuming with ${existing.length} cached)…`);
+  } else {
+    console.log(`\nBuilding deck "${spec.name}" (${spec.seeds.length} seeds)…`);
+  }
+
+  const reports: SeedReport[] = [];
+  for (const seed of spec.seeds) {
+    const cached = findExistingMatch(seed, existing);
+    if (cached) {
+      console.log(`  [cache] ${seed.artist} — ${seed.term}`);
+      reports.push({ seed, matched: true, chosen: cached, alternatives: [] });
+      continue;
+    }
+    try {
+      const report = await resolveSeed(seed);
+      const flag = report.matched ? 'ok ' : 'MISS';
+      console.log(`  [${flag}] ${seed.artist} — ${seed.term} (${seed.year})`);
+      reports.push(report);
+      // Incrementally persist so progress survives an interrupted run.
+      await writeDeckAndReview(spec, reports);
+    } catch (err) {
+      console.warn(`  [ERR] ${seed.artist} — ${seed.term}: ${(err as Error).message}`);
+      reports.push({ seed, matched: false, alternatives: [] });
+    }
+    await delay(POLITE_DELAY_MS);
+  }
+
+  const trackCount = await writeDeckAndReview(spec, reports);
   const misses = reports.filter((r) => !r.matched).length;
-  console.log(`  → wrote ${tracks.length} tracks${misses ? `, ${misses} unmatched (see review file)` : ''}`);
+  console.log(`  → wrote ${trackCount} tracks${misses ? `, ${misses} unmatched (see review file)` : ''}`);
 }
 
 async function loadSpec(path: string): Promise<DeckSpec> {
