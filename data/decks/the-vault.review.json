@@ -25442,6 +25442,1650 @@
           "year": 2022
         }
       ]
+    },
+    {
+      "seed": {
+        "term": "Savage Love",
+        "artist": "Jawsh 685",
+        "year": 2020
+      },
+      "matched": false,
+      "alternatives": [
+        {
+          "title": "Savage Love (Laxed - Siren Beat)",
+          "artist": "Jawsh 685 x Jason Derulo",
+          "album": "Savage Love (Laxed - Siren Beat) - Single",
+          "year": 2020
+        },
+        {
+          "title": "Savage Love (Laxed - Siren Beat) [Originally performed by Jawsh 685 and Jason Derulo] [Instrumental]",
+          "artist": "3 Dope Brothas",
+          "album": "Savage Love (Laxed - Siren Beat) [Originally performed by Jawsh 685 and Jason Derulo] [Instrumental] - Single",
+          "year": 2020
+        },
+        {
+          "title": "Savage Love (Laxed - Siren Beat) [BTS Remix] [Instrumental]",
+          "artist": "Jawsh 685, Jason Derulo & BTS",
+          "album": "Savage Love (Laxed - Siren Beat) [BTS Remix] - Single",
+          "year": 2020
+        },
+        {
+          "title": "Savage Love (Originally Performed by Jason Derulo and Jawsh 685) [Piano Instrumental Version]",
+          "artist": "iSingKeys",
+          "album": "Savage Love (Originally Performed by Jason Derulo and Jawsh 685) [Piano Instrumental Version] - Single",
+          "year": 2020
+        },
+        {
+          "title": "Savage Love (Laxed - Siren Beat)",
+          "artist": "Bing Bong",
+          "album": "Savage Love (Laxed - Siren Beat) - Single",
+          "year": 2020
+        }
+      ]
+    },
+    {
+      "seed": {
+        "term": "Mood",
+        "artist": "24kGoldn",
+        "year": 2020
+      },
+      "matched": true,
+      "chosen": {
+        "id": "itunes:1559066401",
+        "title": "Mood (feat. iann dior)",
+        "artist": "24kGoldn",
+        "album": "El Dorado",
+        "releaseYear": 2020,
+        "releaseDate": "2020-07-21T12:00:00Z",
+        "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview114/v4/89/fb/a9/89fba973-37cf-fee1-cf6d-e9250d1c1edf/mzaf_9753322249851478859.plus.aac.p.m4a",
+        "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/ac/fe/35/acfe3571-3872-92c6-e208-072fe362d7c3/886449095070.jpg/600x600bb.jpg",
+        "durationMs": 140878,
+        "source": "itunes",
+        "yearVerified": true
+      },
+      "alternatives": [
+        {
+          "title": "Mood (feat. iann dior)",
+          "artist": "24kGoldn",
+          "album": "El Dorado",
+          "year": 2020
+        },
+        {
+          "title": "Mood (feat. iann dior) [Mixed]",
+          "artist": "24kGoldn",
+          "album": "Hip Hop, Vol. 2 (DJ Mix)",
+          "year": 2023
+        },
+        {
+          "title": "CITY OF ANGELS",
+          "artist": "24kGoldn",
+          "album": "DROPPED OUTTA COLLEGE",
+          "year": 2019
+        },
+        {
+          "title": "24kGoldn - Mood X Navya Lofi",
+          "artist": "Navya Lofi",
+          "album": "24kGoldn - Mood X Navya Lofi - Single",
+          "year": 2024
+        },
+        {
+          "title": "Tinted Eyes (feat. 24kGoldn)",
+          "artist": "DVBBS",
+          "album": "Tinted Eyes (feat. 24kGoldn) - Single",
+          "year": 2020
+        }
+      ]
+    },
+    {
+      "seed": {
+        "term": "drivers license",
+        "artist": "Olivia Rodrigo",
+        "year": 2021
+      },
+      "matched": true,
+      "chosen": {
+        "id": "itunes:1560735480",
+        "title": "drivers license",
+        "artist": "Olivia Rodrigo",
+        "album": "SOUR",
+        "releaseYear": 2021,
+        "releaseDate": "2021-01-08T08:00:00Z",
+        "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/36/62/61/366261be-0996-d73d-de6f-03417867c800/mzaf_8201528327761821135.plus.aac.p.m4a",
+        "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/02/ed/8c/02ed8cab-c089-2fdd-7ce6-ab334a9a4e19/21UMGIM26093.rgb.jpg/600x600bb.jpg",
+        "durationMs": 242014,
+        "source": "itunes",
+        "yearVerified": true
+      },
+      "alternatives": [
+        {
+          "title": "drivers license",
+          "artist": "Olivia Rodrigo",
+          "album": "SOUR",
+          "year": 2021
+        },
+        {
+          "title": "drivers license",
+          "artist": "Olivia Rodrigo",
+          "album": "drivers license - Single",
+          "year": 2021
+        },
+        {
+          "title": "drivers license",
+          "artist": "Olivia Rodrigo",
+          "album": "SOUR (Video Version)",
+          "year": 2021
+        },
+        {
+          "title": "Drivers License",
+          "artist": "Sparrow Sleeps",
+          "album": "goodnight 4 u: Lullaby renditions of Olivia Rodrigo songs",
+          "year": 2021
+        },
+        {
+          "title": "drivers license",
+          "artist": "Olivia Rodrigo",
+          "album": "Sad",
+          "year": 2021
+        }
+      ]
+    },
+    {
+      "seed": {
+        "term": "good 4 u",
+        "artist": "Olivia Rodrigo",
+        "year": 2021
+      },
+      "matched": true,
+      "chosen": {
+        "id": "itunes:1582277652",
+        "title": "good 4 u",
+        "artist": "Olivia Rodrigo",
+        "album": "SOUR (Video Version)",
+        "releaseYear": 2021,
+        "releaseDate": "2021-05-14T07:00:00Z",
+        "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/9f/bd/f1/9fbdf1ce-12d9-7440-1c1c-3fed40567619/mzaf_7303839465958373073.plus.aac.p.m4a",
+        "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/76/46/48/76464884-0e9c-1951-a3f6-ce02f74c2b19/21UMGIM26093.rgb.jpg/600x600bb.jpg",
+        "durationMs": 178147,
+        "source": "itunes",
+        "yearVerified": true
+      },
+      "alternatives": [
+        {
+          "title": "good 4 u",
+          "artist": "Olivia Rodrigo",
+          "album": "SOUR (Video Version)",
+          "year": 2021
+        },
+        {
+          "title": "traitor",
+          "artist": "Olivia Rodrigo",
+          "album": "SOUR",
+          "year": 2021
+        },
+        {
+          "title": "Good 4 U",
+          "artist": "KIDZ BOP Kids",
+          "album": "KIDZ BOP 2022",
+          "year": 2021
+        },
+        {
+          "title": "good 4 u",
+          "artist": "Olivia Rodrigo",
+          "album": "SOUR",
+          "year": 2021
+        },
+        {
+          "title": "good 4 u",
+          "artist": "Olivia Rodrigo",
+          "album": "Back to School 2023",
+          "year": 2021
+        }
+      ]
+    },
+    {
+      "seed": {
+        "term": "Stay",
+        "artist": "The Kid LAROI",
+        "year": 2021
+      },
+      "matched": false,
+      "alternatives": [
+        {
+          "title": "STAY",
+          "artist": "The Kid LAROI & Justin Bieber",
+          "album": "STAY - Single",
+          "year": 2021
+        },
+        {
+          "title": "STAY (Remix) / Hindsight (Mixed)",
+          "artist": "Audien, The Kid LAROI & Justin Bieber",
+          "album": "Audien at EDC Mexico 2023: Kinetic Field Stage (DJ Mix)",
+          "year": 2023
+        },
+        {
+          "title": "STAY (Mixed)",
+          "artist": "The Kid LAROI & Justin Bieber",
+          "album": "Club Crates, Pt. 3 (DJ Mix)",
+          "year": 2022
+        },
+        {
+          "title": "STAY",
+          "artist": "The Kid LAROI & Justin Bieber",
+          "album": "F*CK LOVE 3+: OVER YOU",
+          "year": 2021
+        },
+        {
+          "title": "STAY",
+          "artist": "The Kid LAROI & Justin Bieber",
+          "album": "Hits 2025 - As Mais Tocadas",
+          "year": 2021
+        }
+      ]
+    },
+    {
+      "seed": {
+        "term": "MONTERO (Call Me By Your Name)",
+        "artist": "Lil Nas X",
+        "year": 2021
+      },
+      "matched": true,
+      "chosen": {
+        "id": "itunes:1559318719",
+        "title": "MONTERO (Call Me By Your Name)",
+        "artist": "Lil Nas X",
+        "album": "MONTERO (Call Me By Your Name) - Single",
+        "releaseYear": 2021,
+        "releaseDate": "2021-03-26T07:00:00Z",
+        "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview124/v4/6e/cd/99/6ecd9966-bbe2-36b5-35f1-cd8ed6406906/mzaf_3486740843482888093.plus.aac.p.m4a",
+        "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/8d/ef/37/8def37cf-f641-1bba-f312-61a9b8d19fbf/886449068029.jpg/600x600bb.jpg",
+        "durationMs": 137876,
+        "source": "itunes",
+        "yearVerified": true
+      },
+      "alternatives": [
+        {
+          "title": "MONTERO (Call Me By Your Name)",
+          "artist": "Lil Nas X",
+          "album": "MONTERO (Call Me By Your Name) - Single",
+          "year": 2021
+        },
+        {
+          "title": "MONTERO (Call Me By Your Name)",
+          "artist": "Lil Nas X",
+          "album": "MONTERO",
+          "year": 2021
+        },
+        {
+          "title": "MONTERO (Call Me By Your Name) [But Lil Nas X Is Silent The Entire Time]",
+          "artist": "Lil Nas X",
+          "album": "MONTERO (Call Me By Your Name) - Single",
+          "year": 2021
+        },
+        {
+          "title": "MONTERO (Call Me By Your Name) [But Lil Nas X Is Silent The Entire Time]",
+          "artist": "Lil Nas X",
+          "album": "MONTERO (Call Me By Your Name) - EP",
+          "year": 2021
+        },
+        {
+          "title": "MONTERO (Call Me By Your Name) [Juelz Remix] [Mixed]",
+          "artist": "Lil Nas X",
+          "album": "Brownies & Lemonade: Juelz presents FLOORSPACE in Los Angeles, Jun 30, 2023 (DJ Mix)",
+          "year": 2023
+        }
+      ]
+    },
+    {
+      "seed": {
+        "term": "Industry Baby",
+        "artist": "Lil Nas X",
+        "year": 2021
+      },
+      "matched": false,
+      "alternatives": [
+        {
+          "title": "INDUSTRY BABY",
+          "artist": "Lil Nas X & Jack Harlow",
+          "album": "INDUSTRY BABY - Single",
+          "year": 2021
+        },
+        {
+          "title": "INDUSTRY BABY (Mixed)",
+          "artist": "Jack Harlow & Lil Nas X",
+          "album": "Today’s Hits: April 2022 (DJ Mix)",
+          "year": 2022
+        },
+        {
+          "title": "INDUSTRY BABY (Mixed)",
+          "artist": "Jack Harlow & Lil Nas X",
+          "album": "Club Crates, Pt. 2 (DJ Mix)",
+          "year": 2022
+        },
+        {
+          "title": "INDUSTRY BABY",
+          "artist": "Lil Nas X & Jack Harlow",
+          "album": "MONTERO",
+          "year": 2021
+        },
+        {
+          "title": "INDUSTRY BABY (EXTENDED)",
+          "artist": "Lil Nas X & Jack Harlow",
+          "album": "INDUSTRY BABY 2.0 - Single",
+          "year": 2021
+        }
+      ]
+    },
+    {
+      "seed": {
+        "term": "Heat Waves",
+        "artist": "Glass Animals",
+        "year": 2020
+      },
+      "matched": true,
+      "chosen": {
+        "id": "itunes:1508562516",
+        "title": "Heat Waves",
+        "artist": "Glass Animals",
+        "album": "Dreamland",
+        "releaseYear": 2020,
+        "releaseDate": "2020-06-28T12:00:00Z",
+        "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/a3/4c/b9/a34cb911-40fc-5f0c-e862-14bd171a77aa/mzaf_384792072030970151.plus.aac.p.m4a",
+        "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/da/8b/77/da8b7731-6f4f-eacf-5e74-8b23389eefa1/20UMGIM03371.rgb.jpg/600x600bb.jpg",
+        "durationMs": 238805,
+        "source": "itunes",
+        "yearVerified": true
+      },
+      "alternatives": [
+        {
+          "title": "Heat Waves",
+          "artist": "Glass Animals",
+          "album": "Dreamland",
+          "year": 2020
+        },
+        {
+          "title": "Heat Waves (Slowed)",
+          "artist": "Glass Animals",
+          "album": "Heat Waves (Expansion Pack) - Single",
+          "year": 2021
+        },
+        {
+          "title": "Heat Waves (Shakur Ahmad Remix)",
+          "artist": "Glass Animals",
+          "album": "Dreamland (+ Bonus Levels)",
+          "year": 2020
+        },
+        {
+          "title": "Heat Waves (with iann dior)",
+          "artist": "Glass Animals & iann dior",
+          "album": "Dreamland (Real Life Edition)",
+          "year": 2021
+        },
+        {
+          "title": "Heat Waves (Diplo Remix)",
+          "artist": "Glass Animals",
+          "album": "Dreamland (+ Bonus Levels)",
+          "year": 2020
+        }
+      ]
+    },
+    {
+      "seed": {
+        "term": "Bad Habits",
+        "artist": "Ed Sheeran",
+        "year": 2021
+      },
+      "matched": true,
+      "chosen": {
+        "id": "itunes:1571330212",
+        "title": "Bad Habits",
+        "artist": "Ed Sheeran",
+        "album": "Bad Habits - Single",
+        "releaseYear": 2021,
+        "releaseDate": "2021-06-25T12:00:00Z",
+        "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f2/08/5d/f2085d7c-a4d0-451b-4d1d-ccc3057ab6e2/mzaf_11771336260379351390.plus.aac.p.m4a",
+        "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/63/45/cc/6345cc98-aa83-ad6e-e3c9-1a36ff9838a4/190296614316.jpg/600x600bb.jpg",
+        "durationMs": 230747,
+        "source": "itunes",
+        "yearVerified": true
+      },
+      "alternatives": [
+        {
+          "title": "Bad Habits",
+          "artist": "Ed Sheeran",
+          "album": "Bad Habits - Single",
+          "year": 2021
+        },
+        {
+          "title": "Bad Habits (feat. Bring Me The Horizon)",
+          "artist": "Ed Sheeran",
+          "album": "Bad Habits (feat. Bring Me The Horizon) - Single",
+          "year": 2022
+        },
+        {
+          "title": "Bad Habits (MEDUZA Remix)",
+          "artist": "Ed Sheeran",
+          "album": "Bad Habits (MEDUZA Remix) - Single",
+          "year": 2020
+        },
+        {
+          "title": "Bad Habits (Joel Corry Remix)",
+          "artist": "Ed Sheeran",
+          "album": "Bad Habits (Joel Corry Remix) - Single",
+          "year": 2021
+        },
+        {
+          "title": "Bad Habits (Acoustic Version)",
+          "artist": "Ed Sheeran",
+          "album": "Bad Habits (Acoustic Version) - Single",
+          "year": 2021
+        }
+      ]
+    },
+    {
+      "seed": {
+        "term": "Peaches",
+        "artist": "Justin Bieber",
+        "year": 2021
+      },
+      "matched": true,
+      "chosen": {
+        "id": "itunes:1556170101",
+        "title": "Peaches (feat. Daniel Caesar & GIVĒON)",
+        "artist": "Justin Bieber",
+        "album": "Justice",
+        "releaseYear": 2021,
+        "releaseDate": "2021-03-19T12:00:00Z",
+        "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/c9/6d/b1/c96db138-df15-d3d1-ef9d-98ef9d350960/mzaf_9411021956242812289.plus.aac.p.m4a",
+        "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/e0/92/da/e092da2d-9f6d-11dc-7843-2021e95a2b61/21UMGIM17518.rgb.jpg/600x600bb.jpg",
+        "durationMs": 198082,
+        "source": "itunes",
+        "yearVerified": true
+      },
+      "alternatives": [
+        {
+          "title": "Peaches (feat. Daniel Caesar & GIVĒON)",
+          "artist": "Justin Bieber",
+          "album": "Justice",
+          "year": 2021
+        },
+        {
+          "title": "Yummy",
+          "artist": "Justin Bieber",
+          "album": "Yummy - Single",
+          "year": 2020
+        },
+        {
+          "title": "Peaches (feat. Daniel Caesar & GIVĒON)",
+          "artist": "Justin Bieber",
+          "album": "Justice (The Complete Edition)",
+          "year": 2021
+        },
+        {
+          "title": "Peaches (feat. Daniel Caesar & GIVĒON)",
+          "artist": "Justin Bieber",
+          "album": "Justice (Triple Chucks Deluxe)",
+          "year": 2021
+        },
+        {
+          "title": "Let Me Love You (feat. Justin Bieber)",
+          "artist": "DJ Snake",
+          "album": "Encore",
+          "year": 2016
+        }
+      ]
+    },
+    {
+      "seed": {
+        "term": "Easy On Me",
+        "artist": "Adele",
+        "year": 2021
+      },
+      "matched": true,
+      "chosen": {
+        "id": "itunes:1590036021",
+        "title": "Easy On Me",
+        "artist": "Adele",
+        "album": "30",
+        "releaseYear": 2021,
+        "releaseDate": "2021-10-14T07:00:00Z",
+        "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview116/v4/75/28/56/75285676-dbce-d91d-7b36-070084a3546b/mzaf_5286200244455841527.plus.aac.p.m4a",
+        "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music115/v4/73/6d/7c/736d7cfb-c79d-c9a9-4170-5e71d008dea1/886449666430.jpg/600x600bb.jpg",
+        "durationMs": 224695,
+        "source": "itunes",
+        "yearVerified": true
+      },
+      "alternatives": [
+        {
+          "title": "Easy On Me",
+          "artist": "Adele",
+          "album": "30",
+          "year": 2021
+        },
+        {
+          "title": "Easy On Me",
+          "artist": "The Piano Guys",
+          "album": "Easy On Me - Single",
+          "year": 2022
+        },
+        {
+          "title": "Easy On Me (Lloyiso's Version)",
+          "artist": "Lloyiso",
+          "album": "Easy On Me - Single",
+          "year": 2021
+        },
+        {
+          "title": "Easy on Me",
+          "artist": "Playing To Pitch In",
+          "album": "Easy on Me - Single",
+          "year": 2021
+        },
+        {
+          "title": "Easy On Me (Remix)",
+          "artist": "Will Gittens",
+          "album": "Easy On Me (Remix) - Single",
+          "year": 2022
+        }
+      ]
+    },
+    {
+      "seed": {
+        "term": "About Damn Time",
+        "artist": "Lizzo",
+        "year": 2022
+      },
+      "matched": true,
+      "chosen": {
+        "id": "itunes:1634655870",
+        "title": "About Damn Time",
+        "artist": "Lizzo",
+        "album": "Special",
+        "releaseYear": 2022,
+        "releaseDate": "2022-04-14T12:00:00Z",
+        "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/1f/1d/91/1f1d9169-e7a4-85f4-c614-845640028993/mzaf_14417727468767979062.plus.aac.p.m4a",
+        "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/b8/20/f9/b820f951-e53c-93bf-e75d-33df6165e7c1/075679736109.jpg/600x600bb.jpg",
+        "durationMs": 191938,
+        "source": "itunes",
+        "yearVerified": true
+      },
+      "alternatives": [
+        {
+          "title": "About Damn Time",
+          "artist": "Lizzo",
+          "album": "Special",
+          "year": 2022
+        },
+        {
+          "title": "About Damn Time (Mixed)",
+          "artist": "Lizzo",
+          "album": "YeeDM Radio, Ep. 2 (DJ Mix)",
+          "year": 2022
+        },
+        {
+          "title": "About Damn Time",
+          "artist": "Lizzo",
+          "album": "MILESTONES",
+          "year": 2022
+        },
+        {
+          "title": "About Damn Time",
+          "artist": "Lizzo",
+          "album": "spring mixtape - songs that feel like fresh air",
+          "year": 2022
+        },
+        {
+          "title": "About Damn Time",
+          "artist": "Lizzo",
+          "album": "Happy Friday",
+          "year": 2022
+        }
+      ]
+    },
+    {
+      "seed": {
+        "term": "As It Was",
+        "artist": "Harry Styles",
+        "year": 2022
+      },
+      "matched": true,
+      "chosen": {
+        "id": "itunes:1615585008",
+        "title": "As It Was",
+        "artist": "Harry Styles",
+        "album": "Harry's House",
+        "releaseYear": 2022,
+        "releaseDate": "2022-03-31T07:00:00Z",
+        "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/67/10/16/67101606-3869-ca44-6c03-e13d6322cb51/mzaf_1135399237022217274.plus.aac.p.m4a",
+        "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/2a/19/fb/2a19fb85-2f70-9e44-f2a9-82abe679b88e/886449990061.jpg/600x600bb.jpg",
+        "durationMs": 167303,
+        "source": "itunes",
+        "yearVerified": true
+      },
+      "alternatives": [
+        {
+          "title": "As It Was",
+          "artist": "Harry Styles",
+          "album": "Harry's House",
+          "year": 2022
+        },
+        {
+          "title": "As It Was",
+          "artist": "Prep",
+          "album": "As It Was - Single",
+          "year": 2022
+        },
+        {
+          "title": "As It Was",
+          "artist": "Zach John King",
+          "album": "As It Was - Single",
+          "year": 2026
+        },
+        {
+          "title": "As It Was (feat. Amelia Magdalena)",
+          "artist": "Vancouver Sleep Clinic & Pop Goes Ambient",
+          "album": "As It Was (feat. Amelia Magdalena) - Single",
+          "year": 2022
+        },
+        {
+          "title": "As It Was (Harry Styles Cover)",
+          "artist": "Aime Simone",
+          "album": "As It Was (Harry Styles Cover)",
+          "year": 2022
+        }
+      ]
+    },
+    {
+      "seed": {
+        "term": "Anti-Hero",
+        "artist": "Taylor Swift",
+        "year": 2022
+      },
+      "matched": true,
+      "chosen": {
+        "id": "itunes:1649434293",
+        "title": "Anti-Hero",
+        "artist": "Taylor Swift",
+        "album": "Midnights",
+        "releaseYear": 2022,
+        "releaseDate": "2022-10-21T12:00:00Z",
+        "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/1d/56/2a/1d562a07-dc5f-a9c0-1f36-2051a8c14eb7/mzaf_7214829135431340590.plus.aac.p.m4a",
+        "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music112/v4/3d/01/f2/3d01f2e5-5a08-835f-3d30-d031720b2b80/22UM1IM07364.rgb.jpg/600x600bb.jpg",
+        "durationMs": 200690,
+        "source": "itunes",
+        "yearVerified": true
+      },
+      "alternatives": [
+        {
+          "title": "Anti-Hero",
+          "artist": "Taylor Swift",
+          "album": "Midnights",
+          "year": 2022
+        },
+        {
+          "title": "Anti-Hero (Kungs Remix)",
+          "artist": "Taylor Swift & Kungs",
+          "album": "Anti-Hero (Remixes) - Single",
+          "year": 2022
+        },
+        {
+          "title": "Anti-Hero (Acoustic Version)",
+          "artist": "Taylor Swift",
+          "album": "Anti-Hero (Acoustic Version) - Single",
+          "year": 2022
+        },
+        {
+          "title": "Anti-Hero (Roosevelt Remix)",
+          "artist": "Taylor Swift & Roosevelt",
+          "album": "Anti-Hero (Remixes) - Single",
+          "year": 2022
+        },
+        {
+          "title": "Anti-Hero",
+          "artist": "Taylor Swift",
+          "album": "Midnights",
+          "year": 2022
+        }
+      ]
+    },
+    {
+      "seed": {
+        "term": "Running Up That Hill",
+        "artist": "Kate Bush",
+        "year": 1985
+      },
+      "matched": true,
+      "chosen": {
+        "id": "itunes:1675560578",
+        "title": "Running Up That Hill (A Deal With God) [2018 Remaster]",
+        "artist": "Kate Bush",
+        "album": "Hounds of Love (2018 Remaster)",
+        "releaseYear": 1985,
+        "releaseDate": "1985-08-05T12:00:00Z",
+        "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/e5/ba/20/e5ba201c-8940-86d1-0541-520079b6c916/mzaf_13026886145802029834.plus.aac.p.m4a",
+        "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/62/97/32/62973286-5bb3-0de7-c051-8b2de8d95472/cover.jpg/600x600bb.jpg",
+        "durationMs": 300840,
+        "source": "itunes",
+        "yearVerified": true
+      },
+      "alternatives": [
+        {
+          "title": "Running Up That Hill (A Deal With God) [2018 Remaster]",
+          "artist": "Kate Bush",
+          "album": "Hounds of Love (2018 Remaster)",
+          "year": 1985
+        },
+        {
+          "title": "Running Up That Hill (A Deal With God) [12\" Mix]",
+          "artist": "Kate Bush",
+          "album": "Best Of The Other Sides",
+          "year": 1985
+        },
+        {
+          "title": "Running Up That Hill (Stranger Things Theme) [feat. Wonder] [Epic Orchestral Version]",
+          "artist": "Krutikov Music",
+          "album": "Running Up That Hill (Stranger Things Theme) [Epic Orchestral Version] [feat. Wonder] - Single",
+          "year": 2022
+        },
+        {
+          "title": "Running Up That Hill",
+          "artist": "Placebo",
+          "album": "Covers",
+          "year": 2003
+        },
+        {
+          "title": "Running Up That Hill",
+          "artist": "MEG MYERS",
+          "album": "Running Up That Hill - Single",
+          "year": 2019
+        }
+      ]
+    },
+    {
+      "seed": {
+        "term": "Unholy",
+        "artist": "Sam Smith",
+        "year": 2022
+      },
+      "matched": false,
+      "alternatives": [
+        {
+          "title": "Unholy",
+          "artist": "Sam Smith & Kim Petras",
+          "album": "Unholy - Single",
+          "year": 2022
+        },
+        {
+          "title": "Unholy (Orchestral Version)",
+          "artist": "Sam Smith & Kim Petras",
+          "album": "Unholy (Orchestral Version) - Single",
+          "year": 2022
+        },
+        {
+          "title": "Unholy (ACRAZE Remix)",
+          "artist": "Sam Smith & Kim Petras",
+          "album": "Unholy (ACRAZE Remix) - Single",
+          "year": 2022
+        },
+        {
+          "title": "Unholy (David Guetta Acid Remix)",
+          "artist": "Sam Smith & Kim Petras",
+          "album": "Unholy (David Guetta Acid Remix) - Single",
+          "year": 2022
+        },
+        {
+          "title": "Unholy (Live From The Royal Albert Hall / Apple Music Edition)",
+          "artist": "Sam Smith & Kim Petras",
+          "album": "Gloria (Apple Music Edition)",
+          "year": 2023
+        }
+      ]
+    },
+    {
+      "seed": {
+        "term": "Flowers",
+        "artist": "Miley Cyrus",
+        "year": 2023
+      },
+      "matched": true,
+      "chosen": {
+        "id": "itunes:1674691586",
+        "title": "Flowers",
+        "artist": "Miley Cyrus",
+        "album": "Endless Summer Vacation",
+        "releaseYear": 2023,
+        "releaseDate": "2023-01-12T12:00:00Z",
+        "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/68/9e/f7/689ef7fe-14fe-a846-c87f-7d3b2d6344b1/mzaf_4167137058064023087.plus.aac.p.m4a",
+        "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/8c/67/ff/8c67ff91-31c3-3fef-1884-ce3ec89f3af4/196589946874.jpg/600x600bb.jpg",
+        "durationMs": 200600,
+        "source": "itunes",
+        "yearVerified": true
+      },
+      "alternatives": [
+        {
+          "title": "Flowers",
+          "artist": "Miley Cyrus",
+          "album": "Endless Summer Vacation",
+          "year": 2023
+        },
+        {
+          "title": "Flowers (Demo)",
+          "artist": "Miley Cyrus",
+          "album": "Endless Summer Vacation",
+          "year": 2023
+        },
+        {
+          "title": "Flowers (Mixed)",
+          "artist": "Miley Cyrus",
+          "album": "Today's Hits: March 2023 (DJ Mix)",
+          "year": 2023
+        },
+        {
+          "title": "Flowers (Mixed)",
+          "artist": "Miley Cyrus",
+          "album": "Today's Hits: February 2023 (DJ Mix)",
+          "year": 2023
+        },
+        {
+          "title": "Flowers",
+          "artist": "Miley Cyrus",
+          "album": "Endless Summer Vacation",
+          "year": 2023
+        }
+      ]
+    },
+    {
+      "seed": {
+        "term": "Kill Bill",
+        "artist": "SZA",
+        "year": 2022
+      },
+      "matched": true,
+      "chosen": {
+        "id": "itunes:1657869393",
+        "title": "Kill Bill",
+        "artist": "SZA",
+        "album": "SOS",
+        "releaseYear": 2022,
+        "releaseDate": "2022-12-09T12:00:00Z",
+        "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/45/2b/ea/452bead6-c7f5-82d4-f5f7-ec876014b4cc/mzaf_2905911853279084717.plus.aac.p.m4a",
+        "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music122/v4/bd/3b/a9/bd3ba9fb-9609-144f-bcfe-ead67b5f6ab3/196589564931.jpg/600x600bb.jpg",
+        "durationMs": 153947,
+        "source": "itunes",
+        "yearVerified": true
+      },
+      "alternatives": [
+        {
+          "title": "Kill Bill",
+          "artist": "SZA",
+          "album": "SOS",
+          "year": 2022
+        },
+        {
+          "title": "Kill Bill (Vocals)",
+          "artist": "SZA",
+          "album": "Kill Bill - Single",
+          "year": 2023
+        },
+        {
+          "title": "Kill Bill (Acoustic)",
+          "artist": "SZA",
+          "album": "Kill Bill (Acoustic) - Single",
+          "year": 2023
+        },
+        {
+          "title": "Kill Bill (Sped Up Version)",
+          "artist": "SZA",
+          "album": "Kill Bill - Single",
+          "year": 2023
+        },
+        {
+          "title": "Kill Bill (Apple Music Live)",
+          "artist": "SZA",
+          "album": "Apple Music Live: SZA",
+          "year": 2024
+        }
+      ]
+    },
+    {
+      "seed": {
+        "term": "Calm Down",
+        "artist": "Rema",
+        "year": 2022
+      },
+      "matched": true,
+      "chosen": {
+        "id": "itunes:1614063459",
+        "title": "Calm Down",
+        "artist": "Rema",
+        "album": "Rave & Roses",
+        "releaseYear": 2022,
+        "releaseDate": "2022-02-11T08:00:00Z",
+        "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/3c/7e/3b/3c7e3b1d-c005-91cb-51d1-2d86effd9990/mzaf_6788794088599474630.plus.aac.p.m4a",
+        "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/b2/b4/7c/b2b47cf9-d8e2-53f6-5c62-c974d665c95b/22UMGIM08994.rgb.jpg/600x600bb.jpg",
+        "durationMs": 219669,
+        "source": "itunes",
+        "yearVerified": true
+      },
+      "alternatives": [
+        {
+          "title": "Calm Down",
+          "artist": "Rema & Selena Gomez",
+          "album": "Calm Down - Single",
+          "year": 2022
+        },
+        {
+          "title": "Calm Down",
+          "artist": "Rema",
+          "album": "Rave & Roses",
+          "year": 2022
+        },
+        {
+          "title": "Calm Down (Mixed)",
+          "artist": "Rema",
+          "album": "Today's Hits: February 2023 (DJ Mix)",
+          "year": 2023
+        },
+        {
+          "title": "Calm Down (Mixed)",
+          "artist": "Rema",
+          "album": "Party In The Jungle: Cuppy, Mar 2022 (DJ Mix)",
+          "year": 2022
+        },
+        {
+          "title": "Calm Down - Rema - En español",
+          "artist": "Rap Flow The Dinamiko",
+          "album": "Calm Down - Rema - En español - Single",
+          "year": 2022
+        }
+      ]
+    },
+    {
+      "seed": {
+        "term": "Last Night",
+        "artist": "Morgan Wallen",
+        "year": 2023
+      },
+      "matched": true,
+      "chosen": {
+        "id": "itunes:1818408858",
+        "title": "Last Night",
+        "artist": "Morgan Wallen",
+        "album": "One Thing At A Time",
+        "releaseYear": 2023,
+        "releaseDate": "2023-02-02T12:00:00Z",
+        "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/35/80/6e/35806e18-1004-87f4-2657-c60a081278c6/mzaf_6990300031180670770.plus.aac.p.m4a",
+        "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/db/9f/8e/db9f8e0c-d947-b7fd-cc93-a832c81ce4ee/00602455241252_Cover.jpg/600x600bb.jpg",
+        "durationMs": 163855,
+        "source": "itunes",
+        "yearVerified": true
+      },
+      "alternatives": [
+        {
+          "title": "Last Night",
+          "artist": "Morgan Wallen",
+          "album": "One Thing At A Time",
+          "year": 2023
+        },
+        {
+          "title": "Wasted On You",
+          "artist": "Morgan Wallen",
+          "album": "Dangerous: The Double Album",
+          "year": 2021
+        },
+        {
+          "title": "Whiskey Glasses",
+          "artist": "Morgan Wallen",
+          "album": "If I Know Me",
+          "year": 2016
+        },
+        {
+          "title": "Last Night (telemitry Remix) [Mixed]",
+          "artist": "Morgan Wallen",
+          "album": "YeeDM Radio, Ep. 13 (DJ Mix)",
+          "year": 2023
+        },
+        {
+          "title": "Cowgirls (feat. ERNEST)",
+          "artist": "Morgan Wallen",
+          "album": "One Thing At A Time",
+          "year": 2023
+        }
+      ]
+    },
+    {
+      "seed": {
+        "term": "Cruel Summer",
+        "artist": "Taylor Swift",
+        "year": 2019
+      },
+      "matched": true,
+      "chosen": {
+        "id": "itunes:1468058171",
+        "title": "Cruel Summer",
+        "artist": "Taylor Swift",
+        "album": "Lover",
+        "releaseYear": 2019,
+        "releaseDate": "2019-08-23T07:00:00Z",
+        "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/44/af/81/44af8168-9609-1b85-5048-ada08dceacf3/mzaf_1341699644335558812.plus.aac.p.m4a",
+        "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music125/v4/49/3d/ab/493dab54-f920-9043-6181-80993b8116c9/19UMGIM53909.rgb.jpg/600x600bb.jpg",
+        "durationMs": 178426,
+        "source": "itunes",
+        "yearVerified": true
+      },
+      "alternatives": [
+        {
+          "title": "Cruel Summer",
+          "artist": "Taylor Swift",
+          "album": "Lover",
+          "year": 2019
+        },
+        {
+          "title": "Cruel Summer (Live from TS The Eras Tour)",
+          "artist": "Taylor Swift",
+          "album": "The Cruelest Summer - Single",
+          "year": 2023
+        },
+        {
+          "title": "Cruel Summer (Mixed)",
+          "artist": "Taylor Swift",
+          "album": "Today's Hits: October 2023 (DJ Mix)",
+          "year": 2023
+        },
+        {
+          "title": "Cruel Summer (LP Giobbi Remix)",
+          "artist": "Taylor Swift & LP Giobbi",
+          "album": "The Cruelest Summer - Single",
+          "year": 2023
+        },
+        {
+          "title": "Cruel Summer (Mixed)",
+          "artist": "Taylor Swift",
+          "album": "2023 Megamix (DJ Mix)",
+          "year": 2023
+        }
+      ]
+    },
+    {
+      "seed": {
+        "term": "Vampire",
+        "artist": "Olivia Rodrigo",
+        "year": 2023
+      },
+      "matched": true,
+      "chosen": {
+        "id": "itunes:1736995100",
+        "title": "vampire",
+        "artist": "Olivia Rodrigo",
+        "album": "GUTS (spilled)",
+        "releaseYear": 2023,
+        "releaseDate": "2023-06-30T07:00:00Z",
+        "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/83/09/5e/83095ea1-83bf-ecdc-3b75-358c350fca51/mzaf_15560849688086702972.plus.aac.p.m4a",
+        "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/08/9e/07/089e0799-b405-9e69-b648-e6a19df9879c/24UMGIM30485.rgb.jpg/600x600bb.jpg",
+        "durationMs": 219724,
+        "source": "itunes",
+        "yearVerified": true
+      },
+      "alternatives": [
+        {
+          "title": "traitor",
+          "artist": "Olivia Rodrigo",
+          "album": "SOUR",
+          "year": 2021
+        },
+        {
+          "title": "vampire",
+          "artist": "Olivia Rodrigo",
+          "album": "GUTS (spilled)",
+          "year": 2023
+        },
+        {
+          "title": "vampire",
+          "artist": "Olivia Rodrigo",
+          "album": "GUTS",
+          "year": 2023
+        },
+        {
+          "title": "vampire",
+          "artist": "Olivia Rodrigo",
+          "album": "pov: you're a vampire",
+          "year": 2023
+        },
+        {
+          "title": "favorite crime",
+          "artist": "Olivia Rodrigo",
+          "album": "SOUR",
+          "year": 2021
+        }
+      ]
+    },
+    {
+      "seed": {
+        "term": "Paint The Town Red",
+        "artist": "Doja Cat",
+        "year": 2023
+      },
+      "matched": true,
+      "chosen": {
+        "id": "itunes:1699832214",
+        "title": "Paint The Town Red",
+        "artist": "Doja Cat",
+        "album": "Paint The Town Red - Single",
+        "releaseYear": 2023,
+        "releaseDate": "2023-08-04T07:00:00Z",
+        "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/2b/09/d0/2b09d002-eb39-20e8-6516-241c940aac8d/mzaf_2681231828238645518.plus.aac.p.m4a",
+        "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/05/a1/62/05a162ca-d0f8-462a-a033-474a019e506f/196871274111.jpg/600x600bb.jpg",
+        "durationMs": 231750,
+        "source": "itunes",
+        "yearVerified": true
+      },
+      "alternatives": [
+        {
+          "title": "Paint The Town Red",
+          "artist": "Doja Cat",
+          "album": "Paint The Town Red - Single",
+          "year": 2023
+        },
+        {
+          "title": "Paint The Town Red",
+          "artist": "KIDZ BOP Kids",
+          "album": "KIDZ BOP 2024",
+          "year": 2024
+        },
+        {
+          "title": "Paint The Town Red (Mixed)",
+          "artist": "Doja Cat",
+          "album": "YeeDM Radio, Ep. 13 (DJ Mix)",
+          "year": 2023
+        },
+        {
+          "title": "Paint The Town Red",
+          "artist": "Doja Cat",
+          "album": "Scarlet 2 CLAUDE",
+          "year": 2023
+        },
+        {
+          "title": "Paint The Town Red",
+          "artist": "Doja Cat",
+          "album": "Scarlet 2 CLAUDE",
+          "year": 2023
+        }
+      ]
+    },
+    {
+      "seed": {
+        "term": "Greedy",
+        "artist": "Tate McRae",
+        "year": 2023
+      },
+      "matched": true,
+      "chosen": {
+        "id": "itunes:1719661252",
+        "title": "greedy",
+        "artist": "Tate McRae",
+        "album": "THINK LATER",
+        "releaseYear": 2023,
+        "releaseDate": "2023-09-15T07:00:00Z",
+        "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview126/v4/ff/fb/f0/fffbf047-d930-4f20-6b5d-17b9895b8052/mzaf_18081110782534090177.plus.aac.p.m4a",
+        "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/21/4a/c2/214ac20c-a66c-84a1-e357-f7e60b1932ca/196871542661.jpg/600x600bb.jpg",
+        "durationMs": 129687,
+        "source": "itunes",
+        "yearVerified": true
+      },
+      "alternatives": [
+        {
+          "title": "greedy",
+          "artist": "Tate McRae",
+          "album": "THINK LATER",
+          "year": 2023
+        },
+        {
+          "title": "greedy",
+          "artist": "Tate McRae",
+          "album": "greedy - Single",
+          "year": 2023
+        },
+        {
+          "title": "greedy (Mixed)",
+          "artist": "Tate McRae",
+          "album": "Today's Hits: December 2023 (DJ Mix)",
+          "year": 2023
+        },
+        {
+          "title": "Sports car",
+          "artist": "Tate McRae",
+          "album": "So Close To What",
+          "year": 2025
+        },
+        {
+          "title": "greedy (Bvrnout Remix) [Mixed]",
+          "artist": "Tate McRae",
+          "album": "Songs You've Been Asking For, Vol. 3 (DJ Mix)",
+          "year": 2023
+        }
+      ]
+    },
+    {
+      "seed": {
+        "term": "Espresso",
+        "artist": "Sabrina Carpenter",
+        "year": 2024
+      },
+      "matched": true,
+      "chosen": {
+        "id": "itunes:1752214923",
+        "title": "Espresso",
+        "artist": "Sabrina Carpenter",
+        "album": "Short n' Sweet",
+        "releaseYear": 2024,
+        "releaseDate": "2024-06-14T07:00:00Z",
+        "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/99/da/ff/99daffce-cdde-59c6-5ae0-7f922ce411a8/mzaf_5621292401829922816.plus.aac.p.m4a",
+        "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/a1/1c/ca/a11ccab6-7d4c-e041-d028-998bcebeb709/24UMGIM61704.rgb.jpg/600x600bb.jpg",
+        "durationMs": 175459,
+        "source": "itunes",
+        "yearVerified": true
+      },
+      "alternatives": [
+        {
+          "title": "Espresso",
+          "artist": "Sabrina Carpenter",
+          "album": "Short n' Sweet",
+          "year": 2024
+        },
+        {
+          "title": "Espresso (On Vacation Version)",
+          "artist": "Sabrina Carpenter",
+          "album": "Espresso EP",
+          "year": 2024
+        },
+        {
+          "title": "Espresso (Piano Version)",
+          "artist": "Linneo",
+          "album": "Piano Covers (Vol. 2)",
+          "year": 2024
+        },
+        {
+          "title": "Espresso (Mixed)",
+          "artist": "Sabrina Carpenter",
+          "album": "Today's Hits: July 2024 (DJ Mix)",
+          "year": 2024
+        },
+        {
+          "title": "Espresso (Mixed)",
+          "artist": "Sabrina Carpenter",
+          "album": "YeeDM Radio, Ep. 18 (DJ Mix)",
+          "year": 2024
+        }
+      ]
+    },
+    {
+      "seed": {
+        "term": "Please Please Please",
+        "artist": "Sabrina Carpenter",
+        "year": 2024
+      },
+      "matched": true,
+      "chosen": {
+        "id": "itunes:1752214912",
+        "title": "Please Please Please",
+        "artist": "Sabrina Carpenter",
+        "album": "Short n' Sweet",
+        "releaseYear": 2024,
+        "releaseDate": "2024-06-14T07:00:00Z",
+        "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/97/06/58/97065890-7970-725a-1595-5045d4b110b1/mzaf_7668784443609724903.plus.aac.p.m4a",
+        "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/a1/1c/ca/a11ccab6-7d4c-e041-d028-998bcebeb709/24UMGIM61704.rgb.jpg/600x600bb.jpg",
+        "durationMs": 186170,
+        "source": "itunes",
+        "yearVerified": true
+      },
+      "alternatives": [
+        {
+          "title": "Please Please Please",
+          "artist": "Sabrina Carpenter & Dolly Parton",
+          "album": "Short n' Sweet (Deluxe)",
+          "year": 2024
+        },
+        {
+          "title": "Please Please Please",
+          "artist": "Sabrina Carpenter",
+          "album": "Short n' Sweet",
+          "year": 2024
+        },
+        {
+          "title": "Please Please Please - Sabrina Carpenter for Babies (Lullapop)",
+          "artist": "Thomas The Beat Engine & Lullapop Dreams",
+          "album": "Lullapop - Lullaby Pop Covers Vol. 2 - EP",
+          "year": 2024
+        },
+        {
+          "title": "Please Please Please",
+          "artist": "KIDZ BOP Kids",
+          "album": "KIDZ BOP 50",
+          "year": 2024
+        },
+        {
+          "title": "Please Please Please (Arr. for Piano)",
+          "artist": "Nilo Jacobs",
+          "album": "Reimagined Keys, Vol. 1 - EP",
+          "year": 2025
+        }
+      ]
+    },
+    {
+      "seed": {
+        "term": "I Had Some Help",
+        "artist": "Post Malone",
+        "year": 2024
+      },
+      "matched": true,
+      "chosen": {
+        "id": "itunes:1744452425",
+        "title": "I Had Some Help (feat. Morgan Wallen)",
+        "artist": "Post Malone",
+        "album": "I Had Some Help (feat. Morgan Wallen) - Single",
+        "releaseYear": 2024,
+        "releaseDate": "2024-05-10T12:00:00Z",
+        "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/1f/70/04/1f7004b7-414e-a89c-0148-abdd38981be8/mzaf_10246855408392712577.plus.aac.p.m4a",
+        "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/84/df/b9/84dfb96b-27c8-4d40-4780-b65ff22790e4/24UMGIM50612.rgb.jpg/600x600bb.jpg",
+        "durationMs": 178206,
+        "source": "itunes",
+        "yearVerified": true
+      },
+      "alternatives": [
+        {
+          "title": "I Had Some Help (feat. Morgan Wallen)",
+          "artist": "Post Malone",
+          "album": "I Had Some Help (feat. Morgan Wallen) - Single",
+          "year": 2024
+        },
+        {
+          "title": "I Had Some Help (feat. Morgan Wallen)",
+          "artist": "Post Malone",
+          "album": "F-1 Trillion",
+          "year": 2024
+        },
+        {
+          "title": "I Had Some Help (feat. Morgan Wallen)",
+          "artist": "Post Malone",
+          "album": "F-1 Trillion (Long Bed)",
+          "year": 2024
+        },
+        {
+          "title": "I Had Some Help (feat. Morgan Wallen) [Mixed]",
+          "artist": "Post Malone",
+          "album": "YeeDM Radio, Ep. 18 (DJ Mix)",
+          "year": 2024
+        },
+        {
+          "title": "I Had Some Help (feat. Morgan Wallen) [Mixed]",
+          "artist": "Post Malone",
+          "album": "Today's Hits: August 2024 (DJ Mix)",
+          "year": 2024
+        }
+      ]
+    },
+    {
+      "seed": {
+        "term": "Birds of a Feather",
+        "artist": "Billie Eilish",
+        "year": 2024
+      },
+      "matched": true,
+      "chosen": {
+        "id": "itunes:1739659142",
+        "title": "BIRDS OF A FEATHER",
+        "artist": "Billie Eilish",
+        "album": "HIT ME HARD AND SOFT",
+        "releaseYear": 2024,
+        "releaseDate": "2024-05-17T12:00:00Z",
+        "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/34/31/d3/3431d34e-847f-5d66-df83-0bce688d997e/mzaf_18106743962423782018.plus.aac.p.m4a",
+        "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music211/v4/92/9f/69/929f69f1-9977-3a44-d674-11f70c852d1b/24UMGIM36186.rgb.jpg/600x600bb.jpg",
+        "durationMs": 210373,
+        "source": "itunes",
+        "yearVerified": true
+      },
+      "alternatives": [
+        {
+          "title": "BIRDS OF A FEATHER",
+          "artist": "Billie Eilish",
+          "album": "HIT ME HARD AND SOFT",
+          "year": 2024
+        },
+        {
+          "title": "BIRDS OF A FEATHER (Artist of the Year 2024 Live)",
+          "artist": "Billie Eilish",
+          "album": "Billie Eilish: Artist of the Year 2024 Live - EP",
+          "year": 2024
+        },
+        {
+          "title": "BIRDS OF A FEATHER (Mixed)",
+          "artist": "Billie Eilish",
+          "album": "Today's Hits: March 2025 (DJ Mix)",
+          "year": 2025
+        },
+        {
+          "title": "BIRDS OF A FEATHER (Mixed)",
+          "artist": "Billie Eilish",
+          "album": "markmark 'A Late Night R&B Experience' at 99 Scott, Brooklyn, Nov 7, 2025 (DJ Mix)",
+          "year": 2025
+        },
+        {
+          "title": "Billie Eilish - Birds of a Feather - Piano Cover",
+          "artist": "Piano Covers",
+          "album": "Popular Hits 2025 - Piano Covers",
+          "year": 2025
+        }
+      ]
+    },
+    {
+      "seed": {
+        "term": "Texas Hold 'Em",
+        "artist": "Beyoncé",
+        "year": 2024
+      },
+      "matched": true,
+      "chosen": {
+        "id": "itunes:1730410734",
+        "title": "TEXAS HOLD 'EM",
+        "artist": "Beyoncé",
+        "album": "TEXAS HOLD 'EM - Single",
+        "releaseYear": 2024,
+        "releaseDate": "2024-02-11T12:00:00Z",
+        "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/04/fd/75/04fd75ca-8739-7c0a-614e-301f61cb5c90/mzaf_81439980041430609.plus.aac.p.m4a",
+        "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/ab/17/80/ab178005-ebf8-f22e-06ac-ffa1fc7f819a/196871850438.jpg/600x600bb.jpg",
+        "durationMs": 233457,
+        "source": "itunes",
+        "yearVerified": true
+      },
+      "alternatives": [
+        {
+          "title": "TEXAS HOLD 'EM",
+          "artist": "Beyoncé",
+          "album": "TEXAS HOLD 'EM - Single",
+          "year": 2024
+        },
+        {
+          "title": "TEXAS HOLD 'EM",
+          "artist": "Beyoncé",
+          "album": "COWBOY CARTER",
+          "year": 2024
+        },
+        {
+          "title": "TEXAS HOLD 'EM (Acapella)",
+          "artist": "Beyoncé",
+          "album": "TEXAS HOLD 'EM - Single",
+          "year": 2024
+        },
+        {
+          "title": "TEXAS HOLD 'EM",
+          "artist": "KIDZ BOP Kids",
+          "album": "TEXAS HOLD 'EM - EP",
+          "year": 2024
+        },
+        {
+          "title": "TEXAS HOLD 'EM (Instrumental)",
+          "artist": "Beyoncé",
+          "album": "TEXAS HOLD 'EM - Single",
+          "year": 2024
+        }
+      ]
+    },
+    {
+      "seed": {
+        "term": "Lose Control",
+        "artist": "Teddy Swims",
+        "year": 2023
+      },
+      "matched": true,
+      "chosen": {
+        "id": "itunes:1691699836",
+        "title": "Lose Control",
+        "artist": "Teddy Swims",
+        "album": "I've Tried Everything But Therapy (Part 1)",
+        "releaseYear": 2023,
+        "releaseDate": "2023-06-23T12:00:00Z",
+        "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/9f/65/d6/9f65d67d-db40-d7da-c954-9a23d28dfe1a/mzaf_7625794503195542708.plus.aac.p.m4a",
+        "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music126/v4/36/19/66/36196640-1561-dc5e-c6bc-1e5f4befa583/093624856771.jpg/600x600bb.jpg",
+        "durationMs": 210689,
+        "source": "itunes",
+        "yearVerified": true
+      },
+      "alternatives": [
+        {
+          "title": "Lose Control",
+          "artist": "Teddy Swims",
+          "album": "I've Tried Everything But Therapy (Part 1)",
+          "year": 2023
+        },
+        {
+          "title": "Lose Control (Radio Edit)",
+          "artist": "Teddy Swims",
+          "album": "Lose Control (Alt. Versions)",
+          "year": 2023
+        },
+        {
+          "title": "Lose Control (Piano Version)",
+          "artist": "Teddy Swims",
+          "album": "Lose Control (Alt. Versions)",
+          "year": 2023
+        },
+        {
+          "title": "Lose Control (Live)",
+          "artist": "Teddy Swims & Freak Freely",
+          "album": "Lose Control (Alt. Versions)",
+          "year": 2024
+        },
+        {
+          "title": "Lose Control (The Village Sessions)",
+          "artist": "Teddy Swims",
+          "album": "Lose Control (The Village Sessions) - Single",
+          "year": 2023
+        }
+      ]
+    },
+    {
+      "seed": {
+        "term": "A Bar Song (Tipsy)",
+        "artist": "Shaboozey",
+        "year": 2024
+      },
+      "matched": true,
+      "chosen": {
+        "id": "itunes:1749591722",
+        "title": "A Bar Song (Tipsy)",
+        "artist": "Shaboozey",
+        "album": "Where I've Been, Isn't Where I'm Going",
+        "releaseYear": 2024,
+        "releaseDate": "2024-04-12T07:00:00Z",
+        "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview221/v4/f0/e5/fc/f0e5fc95-050a-9726-57ad-bc696e9d0201/mzaf_8459705202091399958.plus.aac.p.m4a",
+        "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music221/v4/be/db/81/bedb81c3-ca23-a1b9-f275-59e46ae4fdb1/197342625517_cover.jpg/600x600bb.jpg",
+        "durationMs": 171292,
+        "source": "itunes",
+        "yearVerified": true
+      },
+      "alternatives": [
+        {
+          "title": "A Bar Song (Tipsy)",
+          "artist": "Shaboozey",
+          "album": "Where I've Been, Isn't Where I'm Going",
+          "year": 2024
+        },
+        {
+          "title": "A Bar Song (Tipsy) [Remix]",
+          "artist": "Shaboozey & David Guetta",
+          "album": "A Bar Song (Tipsy) [Remix] - Single",
+          "year": 2024
+        },
+        {
+          "title": "A Bar Song (Tipsy) [Instrumental]",
+          "artist": "Shaboozey",
+          "album": "A Bar Song (Tipsy) - Single",
+          "year": 2024
+        },
+        {
+          "title": "A Bar Song (Tipsy)",
+          "artist": "Shaboozey",
+          "album": "Where I've Been, Isn't Where I'm Going: The Complete Edition",
+          "year": 2024
+        },
+        {
+          "title": "A Bar Song (Tipsy)",
+          "artist": "Shaboozey",
+          "album": "A Bar Song (Tipsy) - Single",
+          "year": 2024
+        }
+      ]
+    },
+    {
+      "seed": {
+        "term": "Stick Season",
+        "artist": "Noah Kahan",
+        "year": 2022
+      },
+      "matched": true,
+      "chosen": {
+        "id": "itunes:1689825330",
+        "title": "Stick Season",
+        "artist": "Noah Kahan",
+        "album": "Stick Season (We'll All Be Here Forever)",
+        "releaseYear": 2022,
+        "releaseDate": "2022-07-08T12:00:00Z",
+        "previewUrl": "https://audio-ssl.itunes.apple.com/itunes-assets/AudioPreview211/v4/a0/ed/8d/a0ed8d32-ed28-75b7-8de7-6555e84f5617/mzaf_8530395673130453138.plus.aac.p.m4a",
+        "artworkUrl": "https://is1-ssl.mzstatic.com/image/thumb/Music116/v4/e4/75/f3/e475f31a-ade1-50bf-e983-1467aaf62c46/23UMGIM59938.rgb.jpg/600x600bb.jpg",
+        "durationMs": 182347,
+        "source": "itunes",
+        "yearVerified": true
+      },
+      "alternatives": [
+        {
+          "title": "Stick Season",
+          "artist": "Noah Kahan",
+          "album": "Stick Season (We'll All Be Here Forever)",
+          "year": 2022
+        },
+        {
+          "title": "Stick Season (Live From Fenway Park)",
+          "artist": "Noah Kahan",
+          "album": "Live From Fenway Park",
+          "year": 2024
+        },
+        {
+          "title": "All My Love",
+          "artist": "Noah Kahan",
+          "album": "Stick Season",
+          "year": 2022
+        },
+        {
+          "title": "Stick Season (Live From Fenway Park)",
+          "artist": "Noah Kahan",
+          "album": "Live From Fenway Park",
+          "year": 2024
+        },
+        {
+          "title": "Stick Season",
+          "artist": "Noah Kahan",
+          "album": "Stick Season (We'll All Be Here Forever)",
+          "year": 2022
+        }
+      ]
     }
   ]
 }
