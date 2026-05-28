@@ -3,27 +3,190 @@
 @tailwind utilities;
 
 @layer base {
+  :root {
+    color-scheme: dark;
+  }
   html,
   body,
   #root {
     height: 100%;
   }
   body {
-    @apply bg-slate-950 text-slate-100 antialiased;
+    @apply bg-ink text-paper antialiased font-sans;
+    font-feature-settings: 'ss01', 'ss02', 'cv11';
+    /* Subtle vignette + warm spotlight, like a desk lamp in a dark listening room. */
+    background-image:
+      radial-gradient(900px 600px at 20% -10%, rgba(245, 166, 35, 0.07), transparent 60%),
+      radial-gradient(700px 500px at 110% 110%, rgba(245, 166, 35, 0.05), transparent 65%),
+      radial-gradient(1100px 800px at 50% 50%, rgba(0, 0, 0, 0.35), transparent 70%);
+    background-attachment: fixed;
+  }
+  /* Fine grain — keeps the dark from looking flat. */
+  body::before {
+    content: '';
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='160' height='160'><filter id='n'><feTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='2' stitchTiles='stitch'/><feColorMatrix values='0 0 0 0 1  0 0 0 0 0.92  0 0 0 0 0.78  0 0 0 0.12 0'/></filter><rect width='100%' height='100%' filter='url(%23n)'/></svg>");
+    opacity: 0.5;
+    mix-blend-mode: overlay;
+    z-index: 1;
+  }
+  #root {
+    position: relative;
+    z-index: 2;
+  }
+  /* Tighter heading typography, optical sizing where Fraunces supports it. */
+  h1,
+  h2,
+  h3 {
+    @apply font-serif text-paper;
+    font-variation-settings: 'opsz' 144, 'SOFT' 50;
+    letter-spacing: -0.01em;
+  }
+  ::selection {
+    background: rgba(245, 166, 35, 0.4);
+    color: #0a0907;
+  }
+  /* Scrollbar styled to the palette */
+  ::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+  }
+  ::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: rgba(237, 228, 211, 0.12);
+    border-radius: 999px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(237, 228, 211, 0.22);
+  }
+  input[type='range'] {
+    -webkit-appearance: none;
+    appearance: none;
+    background: transparent;
+  }
+  input[type='range']::-webkit-slider-runnable-track {
+    height: 2px;
+    background: linear-gradient(to right, theme('colors.amber.DEFAULT'), theme('colors.amber.deep'));
+    border-radius: 9999px;
+  }
+  input[type='range']::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    height: 22px;
+    width: 22px;
+    border-radius: 9999px;
+    background: theme('colors.paper.DEFAULT');
+    border: 2px solid theme('colors.amber.DEFAULT');
+    margin-top: -10px;
+    box-shadow: 0 0 0 4px rgba(245, 166, 35, 0.15);
+    cursor: grab;
+  }
+  input[type='range']::-webkit-slider-thumb:active {
+    cursor: grabbing;
+  }
+  /* Subtle focus rings in the accent color */
+  :focus-visible {
+    outline: 1.5px solid theme('colors.amber.DEFAULT');
+    outline-offset: 3px;
+    border-radius: 2px;
   }
 }
 
 @layer components {
+  /* Hi-fi panel — sharp corners, single hairline rule, slight inner glow. */
+  .panel {
+    @apply border border-rule bg-ink-100/60 p-6 backdrop-blur-sm;
+    box-shadow:
+      inset 0 1px 0 rgba(237, 228, 211, 0.04),
+      0 1px 0 rgba(0, 0, 0, 0.5);
+  }
+  /* Plate — the older "card" replacement, with a slight elevation on hover. */
+  .plate {
+    @apply panel transition-all duration-300;
+  }
+  .plate-hover:hover {
+    @apply border-paper/20;
+    transform: translateY(-1px);
+    box-shadow:
+      inset 0 1px 0 rgba(237, 228, 211, 0.06),
+      0 10px 24px -10px rgba(0, 0, 0, 0.6);
+  }
+  /* Buttons */
   .btn {
-    @apply inline-flex items-center justify-center rounded-xl px-5 py-3 font-semibold transition active:scale-[0.98] disabled:cursor-not-allowed disabled:opacity-50;
+    @apply inline-flex items-center justify-center px-5 py-3 font-sans text-sm font-medium uppercase tracking-widest2 transition-all duration-200 disabled:cursor-not-allowed disabled:opacity-40;
   }
   .btn-primary {
-    @apply btn bg-brand-600 text-white hover:bg-brand-500;
+    @apply btn border border-amber/60 bg-amber/15 text-amber-warm hover:border-amber hover:bg-amber/25 hover:text-paper;
+  }
+  .btn-primary:hover {
+    box-shadow: 0 0 32px -4px rgba(245, 166, 35, 0.35);
   }
   .btn-ghost {
-    @apply btn bg-slate-800 text-slate-100 hover:bg-slate-700;
+    @apply btn border border-rule text-paper-dim hover:border-paper/30 hover:text-paper;
   }
-  .card {
-    @apply rounded-2xl border border-slate-800 bg-slate-900/70 p-6 shadow-xl;
+  .btn-quiet {
+    @apply text-paper-dim hover:text-paper transition-colors;
+  }
+  /* Field — refined input style */
+  .field {
+    @apply w-full border border-rule bg-ink-50 px-4 py-3 font-sans text-paper outline-none transition-colors focus:border-amber/70;
+  }
+  /* Inline rule — thin warm hairline used as section divider */
+  .rule-line {
+    @apply h-px w-full bg-rule;
+  }
+  /* Eyebrow label — small uppercase mono caption */
+  .eyebrow {
+    @apply font-mono text-[11px] uppercase tracking-widest2 text-paper-mute;
+  }
+  /* Numeric — tabular tight monos for scores/years */
+  .numeric {
+    @apply font-mono tabular-nums;
+  }
+  /* Serial number style */
+  .serial {
+    @apply font-mono text-[11px] tabular-nums tracking-widest2 text-paper-mute;
+  }
+  /* Display heading */
+  .display {
+    @apply font-serif font-light;
+    font-variation-settings: 'opsz' 144, 'SOFT' 70;
+    letter-spacing: -0.02em;
+  }
+}
+
+@layer utilities {
+  /* Hi-fi number ticker baseline */
+  .tnum {
+    font-variant-numeric: tabular-nums;
+  }
+  /* Per-letter container utility for wordmarks */
+  .letters > span {
+    display: inline-block;
+    will-change: transform;
+  }
+  /* Optical italic helper for Fraunces */
+  .italic-soft {
+    font-style: italic;
+    font-variation-settings: 'opsz' 144, 'SOFT' 100;
+  }
+  /* Fraunces dramatic display */
+  .display-heavy {
+    font-weight: 600;
+    font-variation-settings: 'opsz' 144, 'SOFT' 30;
+  }
+  /* Vinyl groove ring overlay — used inside the disc SVG container */
+  .ring-grooves {
+    background-image: repeating-radial-gradient(
+      circle at center,
+      rgba(237, 228, 211, 0.04) 0,
+      rgba(237, 228, 211, 0.04) 1px,
+      transparent 1px,
+      transparent 6px
+    );
   }
 }

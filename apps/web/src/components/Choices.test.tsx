@@ -9,13 +9,14 @@ describe('Choices', () => {
     render(
       <Choices choices={['A', 'B', 'C', 'D']} revealed={false} picked={null} correct="A" onPick={onPick} />,
     );
-    await userEvent.click(screen.getByText('B'));
+    await userEvent.click(screen.getByRole('button', { name: /B/ }));
     expect(onPick).toHaveBeenCalledWith('B');
   });
 
   it('disables buttons once revealed', () => {
     render(<Choices choices={['A', 'B']} revealed picked="B" correct="A" onPick={() => {}} />);
-    expect(screen.getByText('A')).toBeDisabled();
-    expect(screen.getByText('B')).toBeDisabled();
+    for (const button of screen.getAllByRole('button')) {
+      expect(button).toBeDisabled();
+    }
   });
 });

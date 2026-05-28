@@ -6,15 +6,17 @@ interface ChoicesProps {
   onPick: (value: string) => void;
 }
 
+const LABELS = ['a', 'b', 'c', 'd', 'e', 'f'];
+
 export function Choices({ choices, revealed, picked, correct, onPick }: ChoicesProps) {
   return (
     <div className="grid grid-cols-1 gap-3 sm:grid-cols-2">
-      {choices.map((choice) => {
-        let cls = 'bg-slate-800 text-slate-100 hover:bg-slate-700';
+      {choices.map((choice, i) => {
+        let tone = 'border-rule bg-ink-100/60 text-paper hover:border-amber/60 hover:text-amber-warm';
         if (revealed) {
-          if (choice === correct) cls = 'bg-emerald-600 text-white';
-          else if (choice === picked) cls = 'bg-rose-600 text-white';
-          else cls = 'bg-slate-800/50 text-slate-500';
+          if (choice === correct) tone = 'border-amber bg-amber/15 text-amber-warm';
+          else if (choice === picked) tone = 'border-paper/30 bg-ink-200 text-paper-dim line-through decoration-paper-mute';
+          else tone = 'border-rule bg-ink-100/40 text-paper-mute';
         }
         return (
           <button
@@ -22,9 +24,12 @@ export function Choices({ choices, revealed, picked, correct, onPick }: ChoicesP
             type="button"
             disabled={revealed}
             onClick={() => onPick(choice)}
-            className={`rounded-xl px-4 py-4 text-center font-semibold transition active:scale-[0.98] ${cls}`}
+            className={`group flex items-baseline gap-3 border px-4 py-4 text-left font-serif text-lg transition-colors duration-200 ${tone}`}
+            style={{ animationDelay: `${i * 60}ms` }}
           >
-            {choice}
+            <span className="serial w-4 shrink-0">{LABELS[i]}</span>
+            <span className="flex-1">{choice}</span>
+            {revealed && choice === correct && <span className="serial text-amber-warm">correct</span>}
           </button>
         );
       })}

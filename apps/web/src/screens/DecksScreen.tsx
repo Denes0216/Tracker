@@ -12,42 +12,54 @@ export function DecksScreen() {
   };
 
   return (
-    <div className="flex flex-col gap-6">
-      <div className="flex items-center justify-between">
-        <h2 className="text-2xl font-bold">Your decks</h2>
+    <div className="flex flex-col gap-10">
+      <div className="flex items-end justify-between">
+        <div>
+          <div className="eyebrow mb-3">the crates</div>
+          <h2 className="display text-4xl">Your decks.</h2>
+        </div>
         <button className="btn-primary" onClick={() => navigate('/decks/new')}>
-          + New deck
+          New deck
         </button>
       </div>
 
       {customDecks.length === 0 ? (
-        <p className="rounded-2xl border border-dashed border-slate-700 p-8 text-center text-slate-400">
-          You haven&apos;t built any decks yet. Tap <span className="font-semibold">New deck</span> to
-          search songs and save your own.
-        </p>
+        <div className="border border-dashed border-rule p-10 text-center">
+          <p className="font-serif italic-soft text-lg text-paper-dim">
+            The crates are empty.
+          </p>
+          <p className="mt-2 text-sm text-paper-mute">
+            Tap <span className="text-amber-warm">New deck</span> to dig through iTunes and save
+            your own.
+          </p>
+        </div>
       ) : (
-        <ul className="flex flex-col gap-3">
+        <ul className="flex flex-col gap-px overflow-hidden border border-rule bg-rule">
           {customDecks.map((deck) => (
-            <li key={deck.id} className="card flex items-center justify-between gap-3">
-              <div className="min-w-0">
-                <div className="truncate font-semibold">{deck.name}</div>
-                <div className="truncate text-sm text-slate-400">{deck.description}</div>
-                <div className="mt-1 text-xs text-slate-500">
-                  {deck.tracks.length} songs · {verifiedTracks(deck).length} year-verified
+            <li
+              key={deck.id}
+              className="flex items-center justify-between gap-4 bg-ink-100/60 px-5 py-4"
+            >
+              <div className="min-w-0 flex-1">
+                <div className="truncate font-serif text-lg text-paper">{deck.name}</div>
+                <div className="truncate text-sm text-paper-dim">{deck.description}</div>
+                <div className="serial mt-1">
+                  {String(deck.tracks.length).padStart(3, '0')} songs ·{' '}
+                  {verifiedTracks(deck).length} year-verified
                 </div>
               </div>
-              <div className="flex shrink-0 gap-2">
+              <div className="flex shrink-0 items-center gap-3">
                 <button
-                  className="rounded-lg bg-slate-800 px-3 py-2 text-sm font-semibold hover:bg-slate-700"
+                  className="font-mono text-[11px] uppercase tracking-widest2 text-paper-dim hover:text-amber-warm"
                   onClick={() => navigate(`/decks/edit/${encodeURIComponent(deck.id)}`)}
                 >
-                  Edit
+                  edit
                 </button>
                 <button
-                  className="rounded-lg bg-slate-800 px-3 py-2 text-sm text-rose-300 hover:bg-slate-700"
+                  className="font-mono text-[11px] uppercase tracking-widest2 text-paper-mute hover:text-amber-warm"
                   onClick={() => confirmDelete(deck.id, deck.name)}
                 >
-                  Delete
+                  delete
                 </button>
               </div>
             </li>
@@ -55,12 +67,12 @@ export function DecksScreen() {
         </ul>
       )}
 
-      <div className="flex gap-3">
+      <div className="flex gap-3 border-t border-rule pt-6">
         <button className="btn-ghost flex-1" onClick={() => navigate('/setup')}>
-          Go to game setup
+          Session setup
         </button>
         <button className="btn-ghost flex-1" onClick={() => navigate('/')}>
-          Home
+          Front of house
         </button>
       </div>
     </div>

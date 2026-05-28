@@ -8,8 +8,8 @@ import { Segmented } from '../components/Segmented';
 import { PlayerRoster } from '../components/PlayerRoster';
 
 const MODE_OPTIONS: ReadonlyArray<{ value: ModeSelection; label: string }> = [
-  { value: 'name-it', label: 'Name It' },
-  { value: 'pin-the-year', label: 'Pin the Year' },
+  { value: 'name-it', label: 'Name it' },
+  { value: 'pin-the-year', label: 'Pin the year' },
   { value: 'mixed', label: 'Mixed' },
 ];
 
@@ -47,7 +47,6 @@ export function SetupScreen() {
   const deck = allDecks.find((d) => d.id === deckId) ?? DECKS[0];
   const activeDeckId = deck.id;
 
-  // Keep a valid deck selected even if the stored id was deleted.
   useEffect(() => {
     if (deckId !== deck.id) selectDeck(deck.id);
   }, [deckId, deck.id, selectDeck]);
@@ -60,23 +59,26 @@ export function SetupScreen() {
   };
 
   return (
-    <div className="flex flex-col gap-6">
-      <h2 className="text-2xl font-bold">Game setup</h2>
+    <div className="flex flex-col gap-10">
+      <div>
+        <div className="eyebrow mb-3">session setup</div>
+        <h2 className="display text-4xl">Pick a deck, set the mood.</h2>
+      </div>
 
       <PlayerRoster />
 
       <section>
-        <div className="mb-2 flex items-center justify-between">
-          <span className="text-sm font-medium text-slate-400">Deck</span>
+        <div className="mb-3 flex items-baseline justify-between">
+          <span className="eyebrow">deck</span>
           <button
             type="button"
-            className="text-sm font-semibold text-brand-400 hover:text-brand-300"
             onClick={() => navigate('/decks')}
+            className="font-mono text-[11px] uppercase tracking-widest2 text-amber-warm hover:text-amber"
           >
-            Build a deck
+            crates →
           </button>
         </div>
-        <div className="grid gap-3">
+        <div className="flex flex-col gap-px overflow-hidden border border-rule bg-rule">
           {allDecks.map((d) => {
             const active = d.id === activeDeckId;
             const custom = d.id.startsWith('custom:');
@@ -87,112 +89,119 @@ export function SetupScreen() {
                 tabIndex={0}
                 onClick={() => selectDeck(d.id)}
                 onKeyDown={(e) => {
-                  if (e.key === 'Enter' || e.key === ' ') selectDeck(d.id);
+                  if (e.key === 'Enter' || e.key === ' ') {
+                    e.preventDefault();
+                    selectDeck(d.id);
+                  }
                 }}
-                className={`card flex cursor-pointer flex-col gap-1 text-left transition ${
-                  active ? 'ring-2 ring-brand-500' : 'hover:border-slate-700'
+                className={`flex cursor-pointer items-center gap-4 px-4 py-4 transition-colors ${
+                  active
+                    ? 'bg-amber/10 ring-1 ring-amber'
+                    : 'bg-ink-100/60 hover:bg-ink-200'
                 }`}
               >
-                <div className="flex items-center justify-between gap-2">
-                  <span className="flex items-center gap-2 font-semibold">
-                    {d.name}
+                <span
+                  className={`h-2 w-2 shrink-0 rounded-full transition-colors ${
+                    active ? 'bg-amber shadow-[0_0_12px_2px_rgba(245,166,35,0.6)]' : 'bg-rule'
+                  }`}
+                />
+                <div className="min-w-0 flex-1">
+                  <div className="flex items-baseline gap-2">
+                    <span className="font-serif text-lg text-paper">{d.name}</span>
                     {custom && (
-                      <span className="rounded bg-slate-700 px-1.5 py-0.5 text-[10px] uppercase text-slate-300">
-                        Custom
+                      <span className="font-mono text-[9px] uppercase tracking-widest2 text-paper-mute">
+                        custom
                       </span>
                     )}
-                  </span>
-                  <span className="flex items-center gap-2 text-xs text-slate-500">
-                    {d.tracks.length} songs
-                    {custom && (
-                      <button
-                        type="button"
-                        className="text-brand-400 hover:text-brand-300"
-                        onClick={(e) => {
-                          e.stopPropagation();
-                          navigate(`/decks/edit/${encodeURIComponent(d.id)}`);
-                        }}
-                      >
-                        Edit
-                      </button>
-                    )}
-                  </span>
+                  </div>
+                  <div className="text-sm text-paper-dim">{d.description}</div>
                 </div>
-                <span className="text-sm text-slate-400">{d.description}</span>
+                <div className="text-right">
+                  <div className="serial">{String(d.tracks.length).padStart(3, '0')}</div>
+                  {custom && (
+                    <button
+                      type="button"
+                      className="font-mono text-[10px] uppercase tracking-widest2 text-amber-warm hover:text-amber"
+                      onClick={(e) => {
+                        e.stopPropagation();
+                        navigate(`/decks/edit/${encodeURIComponent(d.id)}`);
+                      }}
+                    >
+                      edit
+                    </button>
+                  )}
+                </div>
               </div>
             );
           })}
         </div>
       </section>
 
-      <Segmented<ModeSelection>
-        label="Mode"
-        value={config.mode}
-        options={MODE_OPTIONS}
-        onChange={(mode) => setConfig({ mode })}
-      />
-
-      <Segmented<CriterionSelection>
-        label="Guess what?"
-        value={config.criterion}
-        options={CRITERION_OPTIONS}
-        onChange={(criterion) => setConfig({ criterion })}
-        disabled={!usesNameIt}
-      />
-
-      <Segmented<InputType>
-        label="Answer style"
-        value={config.inputType}
-        options={INPUT_OPTIONS}
-        onChange={(inputType) => setConfig({ inputType })}
-        disabled={!usesNameIt}
-      />
-
-      {players.length > 1 && (
-        <Segmented<TurnStructure>
-          label="Turn structure"
-          value={config.turnStructure}
-          options={TURN_OPTIONS}
-          onChange={(turnStructure) => setConfig({ turnStructure })}
+      <div className="grid gap-6 sm:grid-cols-2">
+        <Segmented<ModeSelection>
+          label="mode"
+          value={config.mode}
+          options={MODE_OPTIONS}
+          onChange={(mode) => setConfig({ mode })}
         />
-      )}
-
-      <Segmented<number>
-        label="Rounds"
-        value={config.roundCount}
-        options={ROUND_OPTIONS}
-        onChange={(roundCount) => setConfig({ roundCount })}
-      />
-
-      <Segmented<number>
-        label="Clip length"
-        value={config.clipMs}
-        options={CLIP_OPTIONS}
-        onChange={(clipMs) => setConfig({ clipMs })}
-      />
+        <Segmented<CriterionSelection>
+          label="guess"
+          value={config.criterion}
+          options={CRITERION_OPTIONS}
+          onChange={(criterion) => setConfig({ criterion })}
+          disabled={!usesNameIt}
+        />
+        <Segmented<InputType>
+          label="answers"
+          value={config.inputType}
+          options={INPUT_OPTIONS}
+          onChange={(inputType) => setConfig({ inputType })}
+          disabled={!usesNameIt}
+        />
+        {players.length > 1 && (
+          <Segmented<TurnStructure>
+            label="turns"
+            value={config.turnStructure}
+            options={TURN_OPTIONS}
+            onChange={(turnStructure) => setConfig({ turnStructure })}
+          />
+        )}
+        <Segmented<number>
+          label="rounds"
+          value={config.roundCount}
+          options={ROUND_OPTIONS}
+          onChange={(roundCount) => setConfig({ roundCount })}
+        />
+        <Segmented<number>
+          label="clip length"
+          value={config.clipMs}
+          options={CLIP_OPTIONS}
+          onChange={(clipMs) => setConfig({ clipMs })}
+        />
+      </div>
 
       {available === 0 ? (
-        <p className="text-sm text-rose-400">
+        <p className="border-l-2 border-amber pl-4 font-serif italic-soft text-amber-warm">
           {config.mode === 'name-it'
-            ? 'This deck has no songs yet — add some in the deck builder.'
-            : 'This deck has no year-verified songs. Verify some years, or switch to Name It.'}
+            ? 'This deck has no songs yet — head to the crates to add some.'
+            : 'No year-verified songs in this deck. Verify some, or switch to Name it.'}
         </p>
       ) : (
         config.mode !== 'name-it' &&
         available < config.roundCount && (
-          <p className="text-sm text-amber-400">
-            Only {available} year-verified {available === 1 ? 'song' : 'songs'} in this deck — you&apos;ll
-            play {available} {available === 1 ? 'round' : 'rounds'}.
+          <p className="border-l-2 border-amber pl-4 font-serif italic-soft text-amber-warm">
+            Only {available} year-verified {available === 1 ? 'song' : 'songs'} in this deck.
+            You&apos;ll play {available} {available === 1 ? 'round' : 'rounds'}.
           </p>
         )
       )}
 
       <button
-        className="btn-primary mt-2 text-lg"
+        className="btn-primary mt-2 text-base animate-glow"
         disabled={available === 0}
         onClick={handleStart}
       >
-        Start game
+        Start the session
       </button>
     </div>
   );

@@ -9,29 +9,51 @@ interface RevealProps {
 export function Reveal({ track, roundScore, detail }: RevealProps) {
   const perfect = roundScore === 0;
   return (
-    <div className="card flex flex-col items-center gap-3 text-center">
-      {track.artworkUrl && (
-        <img
-          src={track.artworkUrl}
-          alt={`${track.album} cover`}
-          className="h-32 w-32 rounded-xl object-cover shadow"
-        />
-      )}
-      <div>
-        <div className="text-lg font-bold">{track.title}</div>
-        <div className="text-slate-400">{track.artist}</div>
-        <div className="text-sm text-slate-500">
-          {track.album} · {track.releaseYear}
+    <div className="panel flex flex-col gap-4">
+      <div className="flex items-baseline justify-between gap-4">
+        <span className="serial">now playing</span>
+        <span className="serial">{track.releaseDate?.slice(0, 4)}</span>
+      </div>
+
+      <div className="flex gap-5">
+        {track.artworkUrl && (
+          <img
+            src={track.artworkUrl}
+            alt=""
+            className="h-24 w-24 shrink-0 object-cover ring-1 ring-rule"
+          />
+        )}
+        <div className="min-w-0 flex-1">
+          <div className="overflow-hidden">
+            <div className="animate-unmask font-serif text-2xl leading-tight text-paper">
+              {track.title}
+            </div>
+          </div>
+          <div className="overflow-hidden">
+            <div
+              className="animate-unmask text-paper-dim"
+              style={{ animationDelay: '160ms' }}
+            >
+              {track.artist}
+            </div>
+          </div>
+          <div className="serial mt-2">{track.album}</div>
         </div>
       </div>
-      <div
-        className={`mt-1 rounded-full px-4 py-1 text-sm font-bold ${
-          perfect ? 'bg-emerald-600 text-white' : 'bg-slate-800 text-slate-200'
-        }`}
-      >
-        +{roundScore} {roundScore === 1 ? 'point' : 'points'}
+
+      <div className="flex items-end justify-between border-t border-rule pt-4">
+        <div className="text-sm text-paper-dim">{detail}</div>
+        <div className="text-right">
+          <div className="serial">round</div>
+          <div
+            className={`font-mono text-4xl tabular-nums ${
+              perfect ? 'text-amber-warm' : 'text-paper'
+            }`}
+          >
+            +{roundScore}
+          </div>
+        </div>
       </div>
-      <p className="text-sm text-slate-400">{detail}</p>
     </div>
   );
 }

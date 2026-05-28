@@ -15,8 +15,8 @@ export function Segmented<T extends string | number>({
 }: SegmentedProps<T>) {
   return (
     <div className={disabled ? 'opacity-40' : undefined}>
-      <div className="mb-2 text-sm font-medium text-slate-400">{label}</div>
-      <div className="flex flex-wrap gap-2">
+      <div className="eyebrow mb-3">{label}</div>
+      <div className="flex flex-wrap gap-px overflow-hidden border border-rule bg-rule">
         {options.map((opt) => {
           const active = opt.value === value;
           return (
@@ -26,8 +26,10 @@ export function Segmented<T extends string | number>({
               disabled={disabled}
               aria-pressed={active}
               onClick={() => onChange(opt.value)}
-              className={`rounded-lg px-4 py-2 text-sm font-semibold transition ${
-                active ? 'bg-brand-600 text-white' : 'bg-slate-800 text-slate-300 hover:bg-slate-700'
+              className={`flex-1 px-4 py-3 font-mono text-[12px] uppercase tracking-widest2 transition-colors ${
+                active
+                  ? 'bg-amber/20 text-amber-warm'
+                  : 'bg-ink-100/60 text-paper-dim hover:bg-ink-200 hover:text-paper'
               }`}
             >
               {opt.label}
