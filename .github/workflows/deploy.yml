@@ -1,0 +1,59 @@
+name: Deploy to GitHub Pages
+
+on:
+  push:
+    branches: [main]
+  workflow_dispatch:
+
+# Pages deploy needs id-token write + pages write; build only needs read.
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+# Don't run two deploys at once; let an in-flight one finish.
+concurrency:
+  group: pages
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: pnpm/action-setup@v4
+        with:
+          version: 10.10.0
+
+      - uses: actions/setup-node@v4
+        with:
+          node-version: 20
+          cache: pnpm
+
+      - name: Install dependencies
+        run: pnpm install --frozen-lockfile
+
+      - name: Compute base path from repo name
+        # GitHub Pages serves the site at https://<owner>.github.io/<repo>/,
+        # so Vite needs base="/<repo>/". Strips owner from $GITHUB_REPOSITORY.
+        run: echo "VITE_BASE=/${GITHUB_REPOSITORY##*/}/" >> "$GITHUB_ENV"
+
+      - name: Build web app
+        run: pnpm --filter @mgg/web build
+
+      - uses: actions/configure-pages@v5
+
+      - uses: actions/upload-pages-artifact@v3
+        with:
+          path: apps/web/dist
+
+  deploy:
+    needs: build
+    runs-on: ubuntu-latest
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    steps:
+      - id: deployment
+        uses: actions/deploy-pages@v4
